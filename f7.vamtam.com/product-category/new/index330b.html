@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+
+<!-- Mirrored from f7.vamtam.com/product-category/new/?add-to-cart=6224 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 25 Apr 2021 13:14:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"9700abca30",applicationID:"9339867"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(7),c=e(8),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(9);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e){return!(!e||!e.protocol||"file:"===e.protocol)}t.exports=r},{}],4:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(6),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],5:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],6:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],7:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],8:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],9:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(7),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=x.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+x.offset],null,"api"),c("timing",["load",n]);var r=l.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+x.offset],null,"api")}var a=e(2),c=e("handle"),f=e(7),u=e("ee"),s=e(5),d=e(3),p=window,l=p.document,m="addEventListener",v="attachEvent",g=p.XMLHttpRequest,w=g&&g.prototype;if(d(p.location)){NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:g,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1208.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:b,userAgent:s};e(1),e(4),l[m]?(l[m]("DOMContentLoaded",o,!1),p[m]("load",r,!1)):(l[v]("onreadystatechange",i),p[v]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0}},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(8),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="">
+<title>New &#8211; Fitness</title>
+<style id="vamtam-theme-options">:root {--vamtam-default-bg-color:#fff;
+--vamtam-default-line-color:rgba( var( --vamtam-accent-color-7-rgb ), 1 );
+--vamtam-small-padding:20px;
+--vamtam-horizontal-padding:50px;
+--vamtam-vertical-padding:30px;
+--vamtam-horizontal-padding-large:60px;
+--vamtam-vertical-padding-large:60px;
+--vamtam-no-border-link:none;
+--vamtam-border-radius:0px;
+--vamtam-border-radius-oval:0px;
+--vamtam-border-radius-small:0px;
+--vamtam-overlay-color:#000000;
+--vamtam-overlay-color-hc:#ffffff;
+--vamtam-box-outer-padding:60px;
+--vamtam-body-link-hover:#000000;
+--vamtam-body-link-active:#000000;
+--vamtam-site-max-width:1260px;
+--vamtam-accent-color-1:#D6FB00;
+--vamtam-accent-color-1-hc:#000000;
+--vamtam-accent-color-1-rgb:214,251,0;
+--vamtam-accent-color-2:#191919;
+--vamtam-accent-color-2-hc:#FFFFFF;
+--vamtam-accent-color-2-rgb:25,25,25;
+--vamtam-accent-color-3:#5E5E5E;
+--vamtam-accent-color-3-hc:#FFFFFF;
+--vamtam-accent-color-3-rgb:94,94,94;
+--vamtam-accent-color-4:#313131;
+--vamtam-accent-color-4-hc:#FFFFFF;
+--vamtam-accent-color-4-rgb:49,49,49;
+--vamtam-accent-color-5:#FFFFFF;
+--vamtam-accent-color-5-hc:#000000;
+--vamtam-accent-color-5-rgb:255,255,255;
+--vamtam-accent-color-6:#000000;
+--vamtam-accent-color-6-hc:#FFFFFF;
+--vamtam-accent-color-6-rgb:0,0,0;
+--vamtam-accent-color-7:#EDEDED;
+--vamtam-accent-color-7-hc:#000000;
+--vamtam-accent-color-7-rgb:237,237,237;
+--vamtam-accent-color-8:#929292;
+--vamtam-accent-color-8-hc:#FFFFFF;
+--vamtam-accent-color-8-rgb:146,146,146;
+--vamtam-body-link-regular:#191919;
+--vamtam-body-link-visited:#191919;
+--vamtam-sticky-header-bg-color:#D6FB00;
+--vamtam-primary-font-font-family:'Helvetica';
+--vamtam-primary-font-font-size-desktop:16px;
+--vamtam-primary-font-font-size-tablet:16px;
+--vamtam-primary-font-font-size-phone:16px;
+--vamtam-primary-font-line-height-desktop:1.375em;
+--vamtam-primary-font-line-height-tablet:1.375em;
+--vamtam-primary-font-line-height-phone:1.375em;
+--vamtam-primary-font-color:#191919;
+--vamtam-h1-font-family:'Kanit';
+--vamtam-h1-font-weight:600;
+--vamtam-h1-transform:uppercase;
+--vamtam-h1-font-size-desktop:70px;
+--vamtam-h1-font-size-tablet:65px;
+--vamtam-h1-font-size-phone:50px;
+--vamtam-h1-line-height-desktop:0.91em;
+--vamtam-h1-line-height-tablet:0.91em;
+--vamtam-h1-line-height-phone:0.91em;
+--vamtam-h1-color:#191919;
+--vamtam-h2-font-family:'Kanit';
+--vamtam-h2-font-weight:700;
+--vamtam-h2-transform:uppercase;
+--vamtam-h2-font-size-desktop:60px;
+--vamtam-h2-font-size-tablet:35px;
+--vamtam-h2-font-size-phone:40px;
+--vamtam-h2-line-height-desktop:0.86em;
+--vamtam-h2-line-height-tablet:0.86em;
+--vamtam-h2-line-height-phone:0.86em;
+--vamtam-h2-letter-spacing-desktop:1px;
+--vamtam-h2-letter-spacing-tablet:1px;
+--vamtam-h2-letter-spacing-phone:1px;
+--vamtam-h2-color:#191919;
+--vamtam-h3-font-family:'Kanit';
+--vamtam-h3-font-weight:600;
+--vamtam-h3-transform:uppercase;
+--vamtam-h3-font-size-desktop:36px;
+--vamtam-h3-font-size-tablet:32px;
+--vamtam-h3-font-size-phone:32px;
+--vamtam-h3-line-height-desktop:0.95em;
+--vamtam-h3-line-height-tablet:0.94em;
+--vamtam-h3-line-height-phone:0.94em;
+--vamtam-h3-color:#191919;
+--vamtam-h4-font-family:'Kanit';
+--vamtam-h4-font-weight:600;
+--vamtam-h4-transform:uppercase;
+--vamtam-h4-font-size-desktop:30px;
+--vamtam-h4-font-size-tablet:30px;
+--vamtam-h4-font-size-phone:30px;
+--vamtam-h4-line-height-desktop:0.93em;
+--vamtam-h4-line-height-tablet:0.93em;
+--vamtam-h4-line-height-phone:0.93em;
+--vamtam-h4-color:#191919;
+--vamtam-h5-font-family:'Kanit';
+--vamtam-h5-font-weight:600;
+--vamtam-h5-font-size-desktop:20px;
+--vamtam-h5-font-size-tablet:20px;
+--vamtam-h5-font-size-phone:20px;
+--vamtam-h5-line-height-desktop:1.1em;
+--vamtam-h5-line-height-tablet:1.1em;
+--vamtam-h5-line-height-phone:1.1em;
+--vamtam-h5-color:#191919;
+--vamtam-h6-font-family:'Kanit';
+--vamtam-h6-font-weight:600;
+--vamtam-h6-transform:uppercase;
+--vamtam-h6-font-size-desktop:14px;
+--vamtam-h6-font-size-tablet:14px;
+--vamtam-h6-font-size-phone:14px;
+--vamtam-h6-line-height-desktop:1em;
+--vamtam-h6-line-height-tablet:1em;
+--vamtam-h6-line-height-phone:1em;
+--vamtam-h6-color:#191919;
+--vamtam-loading-animation:url('../../wp-content/themes/f7/vamtam/assets/images/loader-ring.gif');
+}</style><meta name='robots' content='max-image-preview:large' />
+<link href='https://fonts.gstatic.com/' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Fitness &raquo; Feed" href="../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Fitness &raquo; Comments Feed" href="../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Fitness &raquo; New Category Feed" href="feed/index.html" />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='sbi_styles-css' href='../../wp-content/plugins/instagram-feed-pro/css/sbi-styles.min8040.css?ver=5.12' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='../../wp-includes/css/dist/block-library/style.mina78f.css?ver=5.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-block-vendors-style-css' href='../../wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/vendors-stylee100.css?ver=4.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-block-style-css' href='../../wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/stylee100.css?ver=4.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css' href='../../wp-content/plugins/woocommerce/assets/css/woocommerce-layoutbb49.css?ver=5.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='../../wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreenbb49.css?ver=5.2.2' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='../../wp-content/plugins/woocommerce/assets/css/woocommercebb49.css?ver=5.2.2' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='elementor-animations-css' href='../../wp-content/plugins/elementor/assets/lib/animations/animations.mindeae.css?ver=3.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='../../wp-content/plugins/elementor/assets/css/frontend.mindeae.css?ver=3.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-4-css' href='../../wp-content/uploads/elementor/css/post-42054.css?ver=1619108383' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-pro-css' href='../../wp-content/plugins/elementor-pro/assets/css/frontend.mindeae.css?ver=3.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-5-all-css' href='../../wp-content/plugins/elementor/assets/lib/font-awesome/css/all.mindeae.css?ver=3.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css' href='../../wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.mindeae.css?ver=3.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-16668-css' href='../../wp-content/uploads/elementor/css/post-16668ffc7.css?ver=1619108387' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-284-css' href='../../wp-content/uploads/elementor/css/post-2845291.css?ver=1619124400' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-18743-css' href='../../wp-content/uploads/elementor/css/post-187435715.css?ver=1619114944' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-3237-css' href='../../wp-content/uploads/elementor/css/post-3237ffc7.css?ver=1619108387' type='text/css' media='all' />
+<link rel='stylesheet' id='vamtam-front-all-css' href='../../wp-content/themes/f7/vamtam/assets/css/dist/all32a9.css?ver=1616271023' type='text/css' media='all' />
+<style id='vamtam-front-all-inline-css' type='text/css'>
+
+			@font-face {
+				font-family: 'icomoon';
+				src: url(../../wp-content/themes/f7/vamtam/assets/fonts/icons/icomoon.woff2) format('woff2'),
+					 url( ../../wp-content/themes/f7/vamtam/assets/fonts/icons/icomoon.woff) format('woff'),
+					 url(../../wp-content/themes/f7/vamtam/assets/fonts/icons/icomoon.ttf) format('ttf');
+				font-weight: normal;
+				font-style: normal;
+				font-display: swap;
+			}
+		
+				@font-face {
+					font-family: 'vamtam-theme';
+					src: url(../../wp-content/themes/f7/vamtam/assets/fonts/theme-icons/theme-icons.woff2) format('woff2'),
+						url(../../wp-content/themes/f7/vamtam/assets/fonts/theme-icons/theme-icons.woff) format('woff');
+					font-weight: normal;
+					font-style: normal;
+					font-display: swap;
+				}
+			
+
+.vamtam-box-outer-padding,
+.limit-wrapper,
+.header-padding {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.vamtam-box-outer-padding .vamtam-box-outer-padding,
+.limit-wrapper .limit-wrapper {
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+@media ( min-width: 1026px ) and ( max-width: 1260px ) {
+	.vamtam-box-outer-padding,
+	.limit-wrapper,
+	.header-padding {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+@media ( max-width: 1025px ) {
+	.vamtam-box-outer-padding,
+	.limit-wrapper,
+	.header-padding {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+@media ( max-width: 768px ) {
+	.vamtam-box-outer-padding,
+	.limit-wrapper,
+	.header-padding {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+
+</style>
+<link rel='stylesheet' id='vamtam-wc-styles-css' href='../../wp-content/themes/f7/vamtam/assets/css/dist/woocommerce/main32a9.css?ver=1616271023' type='text/css' media='all' />
+<link rel='stylesheet' id='vamtam-theme-layout-max-low-css' href='../../wp-content/themes/f7/vamtam/assets/css/dist/responsive/layout-max-low32a9.css?ver=1616271023' type='text/css' media='(min-width: 1025px) and (max-width: 1260px)' />
+<link rel='stylesheet' id='vamtam-theme-layout-max-css' href='../../wp-content/themes/f7/vamtam/assets/css/dist/responsive/layout-max32a9.css?ver=1616271023' type='text/css' media='(min-width: 1025px)' />
+<link rel='stylesheet' id='vamtam-theme-layout-below-max-css' href='../../wp-content/themes/f7/vamtam/assets/css/dist/responsive/layout-below-max32a9.css?ver=1616271023' type='text/css' media='(max-width: 1024px)' />
+<link rel='stylesheet' id='vamtam-theme-layout-small-css' href='../../wp-content/themes/f7/vamtam/assets/css/dist/responsive/layout-small32a9.css?ver=1616271023' type='text/css' media='(max-width: 767px)' />
+<link rel='stylesheet' id='vamtam-theme-wc-small-screen-css' href='../../wp-content/themes/f7/vamtam/assets/css/dist/responsive/wc-small-screen32a9.css?ver=1616271023' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Kanit%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=5.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-theme-icons-css' href='../../wp-content/uploads/elementor/custom-icons/theme-icons/style8a54.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-shared-0-css' href='../../wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min9e0b.css?ver=5.15.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-brands-css' href='../../wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min9e0b.css?ver=5.15.1' type='text/css' media='all' />
+<script type='text/javascript' src='../../wp-includes/js/jquery/jquery.min9d52.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='../../wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.mindeae.js?ver=3.2.1' id='font-awesome-4-shim-js'></script>
+<link rel="https://api.w.org/" href="../../wp-json/index.html" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 5.7.1" />
+<meta name="generator" content="WooCommerce 5.2.2" />
+<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+<link rel="icon" href="../../wp-content/uploads/2020/12/logo.svg" sizes="32x32" />
+<link rel="icon" href="../../wp-content/uploads/2020/12/logo.svg" sizes="192x192" />
+<link rel="apple-touch-icon" href="../../wp-content/uploads/2020/12/logo.svg" />
+<meta name="msapplication-TileImage" content="https://f7.vamtam.com/wp-content/uploads/2020/12/logo.svg" />
+<style type="text/css" id="wp-custom-css">
+			@media (min-width: 1026px) and (max-width: 1260px){
+  body.woocommerce.single.single-product .limit-wrapper {
+      padding-left: 0px;
+      padding-right: 0px;
+  }
+}
+
+@media (max-width: 1025px){
+  body.woocommerce.single.single-product .limit-wrapper {
+      padding-left: 0px;
+      padding-right: 0px;
+  }
+}
+
+@media (max-width: 768px){
+  body.woocommerce.single.single-product .limit-wrapper {
+      padding-left: 0px;
+      padding-right: 0px;
+  }
+}
+		</style>
+</head>
+<body class="archive tax-product_cat term-new term-49 wp-custom-logo wp-embed-responsive theme-f7 woocommerce woocommerce-page woocommerce-no-js full header-layout-logo-menu has-page-header no-middle-header responsive-layout elementor-active elementor-pro-active layout-full elementor-default elementor-template-full-width elementor-kit-4 elementor-page-18743">
+<div id="top"></div>
+<div data-elementor-type="header" data-elementor-id="16668" class="elementor elementor-16668 elementor-location-header" data-elementor-settings="[]">
+<div class="elementor-section-wrap">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-21d04c6b elementor-section-content-middle elementor-section-height-min-height elementor-hidden-tablet elementor-hidden-phone elementor-section-full_width vamtam-sticky-header  elementor-section-height-default elementor-section-items-middle elementor-invisible" data-id="21d04c6b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;],&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_tablet&quot;:&quot;none&quot;,&quot;animation_mobile&quot;:&quot;none&quot;,&quot;sticky_effects_offset&quot;:50,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_offset&quot;:0}">
+<div class="elementor-container elementor-column-gap-narrow">
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1996235b" data-id="1996235b" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-4c3d2527 elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="4c3d2527" data-element_type="widget" data-widget_type="theme-site-logo.default">
+<div class="elementor-widget-container">
+<a href="../../index.html">
+<img src="../../wp-content/uploads/2020/12/logo.svg" class="attachment-full size-full" alt="" height="33" width="58" /> </a>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-5126c10" data-id="5126c10" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-7f239880 elementor-nav-menu__align-center elementor-widget__width-auto elementor-widget-mobile__width-auto elementor-nav-menu--stretch elementor-nav-menu--indicator-none elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger vamtam-has-mobile-disable-scroll elementor-widget elementor-widget-nav-menu" data-id="7f239880" data-element_type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+<div class="elementor-widget-container">
+<nav role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--pointer-underline-theme"><ul id="menu-1-7f239880" class="elementor-nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-267"><a href="../../index.html" class="elementor-item">Home</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-270"><a href="../../index.html" class="elementor-sub-item">Home 1</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7870"><a href="../../home-2/index.html" class="elementor-sub-item">Personal Trainer</a></li>
+</ul>
+</li>
+<li class="vamtam-menu-click-on-hover mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-3239"><a href="#" class="elementor-item elementor-item-anchor">Classes</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8094"><a href="../../membership/index.html" class="elementor-item">Membership</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1460"><a href="../../about/index.html" class="elementor-item">About</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11771"><a href="../../about.html" class="elementor-sub-item">F7 Club</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4643"><a href="../../team/index.html" class="elementor-sub-item">Team</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1463"><a href="../../reviews/index.html" class="elementor-sub-item">Reviews</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1464"><a href="../../contact/index.html" class="elementor-sub-item">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19193"><a href="../../schedules/index.html" class="elementor-sub-item">Schedules</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1465"><a href="../../covid-19/index.html" class="elementor-sub-item">Covid-19</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11770"><a href="../../blog.html" class="elementor-item">Community</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7151"><a href="../../blog/index.html" class="elementor-sub-item">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7150"><a href="../../stories/index.html" class="elementor-sub-item">Stories</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14902"><a href="../../shop-2/index.html" class="elementor-item">Shop</a></li>
+</ul></nav>
+<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+<i class="eicon-menu-bar" aria-hidden="true"></i>
+<span class="elementor-screen-only">Menu</span>
+</div>
+<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true"><ul id="menu-2-7f239880" class="elementor-nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-267"><a href="../../index.html" class="elementor-item">Home</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-270"><a href="../../index.html" class="elementor-sub-item">Home 1</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7870"><a href="../../home-2/index.html" class="elementor-sub-item">Personal Trainer</a></li>
+</ul>
+</li>
+<li class="vamtam-menu-click-on-hover mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-3239"><a href="#" class="elementor-item elementor-item-anchor">Classes</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8094"><a href="../../membership/index.html" class="elementor-item">Membership</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1460"><a href="../../about/index.html" class="elementor-item">About</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11771"><a href="../../about.html" class="elementor-sub-item">F7 Club</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4643"><a href="../../team/index.html" class="elementor-sub-item">Team</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1463"><a href="../../reviews/index.html" class="elementor-sub-item">Reviews</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1464"><a href="../../contact/index.html" class="elementor-sub-item">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19193"><a href="../../schedules/index.html" class="elementor-sub-item">Schedules</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1465"><a href="../../covid-19/index.html" class="elementor-sub-item">Covid-19</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11770"><a href="../../blog.html" class="elementor-item">Community</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7151"><a href="../../blog/index.html" class="elementor-sub-item">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7150"><a href="../../stories/index.html" class="elementor-sub-item">Stories</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14902"><a href="../../shop-2/index.html" class="elementor-item">Shop</a></li>
+</ul></nav>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-43f081b7" data-id="43f081b7" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-a0a7b78 elementor-widget__width-auto vamtam-has-theme-style elementor-widget elementor-widget-button" data-id="a0a7b78" data-element_type="widget" data-widget_type="button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a href="../../membership.html" class="elementor-button-link elementor-button elementor-size-xs" role="button">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-icon elementor-align-icon-left">
+<i aria-hidden="true" class="vamtamtheme- vamtam-theme-arrow-right"></i> </span>
+<span class="elementor-button-text">Join</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-303c9fa elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="303c9fa" data-element_type="widget" data-widget_type="button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjUzMjgiLCJ0b2dnbGUiOmZhbHNlLCJhbGlnbl93aXRoX3BhcmVudCI6IiJ9" class="elementor-button-link elementor-button elementor-size-xs elementor-animation-grow-rotate" role="button">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-text">Free<br>pass</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-17354a2 toggle-icon--cart-solid elementor-widget__width-auto elementor-menu-cart--items-indicator-bubble vamtam-has-hide-cart-checkout elementor-menu-cart--show-divider-yes elementor-menu-cart--show-remove-button-yes elementor-menu-cart--buttons-inline vamtam-has-theme-checkout-btn-style elementor-widget elementor-widget-woocommerce-menu-cart" data-id="17354a2" data-element_type="widget" data-widget_type="woocommerce-menu-cart.default">
+<div class="elementor-widget-container">
+<div class="elementor-menu-cart__wrapper">
+<div class="elementor-menu-cart__container elementor-lightbox" aria-expanded="false">
+<div class="elementor-menu-cart__main" aria-expanded="false">
+<div class="vamtam-elementor-menu-cart__header">
+<span class="font-h4 label">Cart</span>
+<span class="item-count">(71)</span>
+<div class="elementor-menu-cart__close-button">
+<svg class="font-h4 vamtam-close vamtam-close-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" version="1.1"><path d="M10 8.586l-7.071-7.071-1.414 1.414 7.071 7.071-7.071 7.071 1.414 1.414 7.071-7.071 7.071 7.071 1.414-1.414-7.071-7.071 7.071-7.071-1.414-1.414-7.071 7.071z"></path></svg>
+</div>
+</div><div class="widget_shopping_cart_content"></div>
+</div>
+</div>
+<div class="elementor-menu-cart__toggle elementor-button-wrapper">
+<a id="elementor-menu-cart__toggle_button" href="#" class="elementor-button elementor-size-sm">
+<span class="elementor-button-text"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>1,375.40</bdi></span></span>
+<span class="elementor-button-icon" data-counter="71">
+<i class="eicon" aria-hidden="true"></i>
+<span class="elementor-screen-only">Cart</span>
+</span>
+</a>
+</div>
+</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-2ede2229 elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2ede2229" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-65cd7220" data-id="65cd7220" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-3d4b6f98 elementor-widget__width-auto elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="3d4b6f98" data-element_type="widget" data-widget_type="theme-site-logo.default">
+<div class="elementor-widget-container">
+<a href="../../index.html">
+<img src="../../wp-content/uploads/2020/12/logo.svg" class="attachment-full size-full" alt="" height="33" width="58" /> </a>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-e3907a4" data-id="e3907a4" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-4df5af7 toggle-icon--cart-solid elementor-widget__width-auto elementor-menu-cart--empty-indicator-hide elementor-menu-cart--items-indicator-bubble vamtam-has-hide-cart-checkout elementor-menu-cart--show-divider-yes elementor-menu-cart--show-remove-button-yes elementor-menu-cart--buttons-inline vamtam-has-theme-checkout-btn-style elementor-widget elementor-widget-woocommerce-menu-cart" data-id="4df5af7" data-element_type="widget" data-widget_type="woocommerce-menu-cart.default">
+<div class="elementor-widget-container">
+<div class="elementor-menu-cart__wrapper">
+<div class="elementor-menu-cart__container elementor-lightbox" aria-expanded="false">
+<div class="elementor-menu-cart__main" aria-expanded="false">
+<div class="vamtam-elementor-menu-cart__header">
+<span class="font-h4 label">Cart</span>
+<span class="item-count">(71)</span>
+<div class="elementor-menu-cart__close-button">
+<svg class="font-h4 vamtam-close vamtam-close-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" version="1.1"><path d="M10 8.586l-7.071-7.071-1.414 1.414 7.071 7.071-7.071 7.071 1.414 1.414 7.071-7.071 7.071 7.071 1.414-1.414-7.071-7.071 7.071-7.071-1.414-1.414-7.071 7.071z"></path></svg>
+</div>
+</div><div class="widget_shopping_cart_content"></div>
+</div>
+</div>
+<div class="elementor-menu-cart__toggle elementor-button-wrapper">
+<a id="elementor-menu-cart__toggle_button" href="#" class="elementor-button elementor-size-sm">
+<span class="elementor-button-text"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>1,375.40</bdi></span></span>
+<span class="elementor-button-icon" data-counter="71">
+<i class="eicon" aria-hidden="true"></i>
+<span class="elementor-screen-only">Cart</span>
+</span>
+</a>
+</div>
+</div> 
+</div>
+</div>
+<div class="elementor-element elementor-element-fcb7819 elementor-nav-menu__align-right elementor-widget__width-auto elementor-widget-mobile__width-auto elementor-nav-menu--stretch elementor-nav-menu--indicator-plus elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger vamtam-has-mobile-disable-scroll elementor-widget elementor-widget-nav-menu" data-id="fcb7819" data-element_type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+<div class="elementor-widget-container">
+<nav role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-slide"><ul id="menu-1-fcb7819" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-10170"><a href="../../index.html" class="elementor-item">Home</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-10172"><a href="../../index.html" class="elementor-sub-item">Home 1</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10171"><a href="../../home-2/index.html" class="elementor-sub-item">Personal Trainer</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10173"><a href="../../classes/index.html" class="elementor-item">Classes</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10174"><a href="../../outdoor-classes/index.html" class="elementor-sub-item">Outdoor Classes</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10175"><a href="../../group-training/index.html" class="elementor-sub-item">Group Training</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10176"><a href="../../digital-coaching/index.html" class="elementor-sub-item">Digital Coaching</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10177"><a href="../../personal-training/index.html" class="elementor-sub-item">Personal Training</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10178"><a href="../../membership/index.html" class="elementor-item">Membership</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10179"><a href="../../about/index.html" class="elementor-item">About</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14938"><a href="../../about.html" class="elementor-sub-item">F7 Club</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10181"><a href="../../team/index.html" class="elementor-sub-item">Team</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10182"><a href="../../reviews/index.html" class="elementor-sub-item">Reviews</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10183"><a href="../../contact/index.html" class="elementor-sub-item">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19194"><a href="../../schedules/index.html" class="elementor-sub-item">Schedules</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10184"><a href="../../covid-19/index.html" class="elementor-sub-item">Covid-19</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14939"><a href="#" class="elementor-item elementor-item-anchor">Community</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10186"><a href="../../blog/index.html" class="elementor-sub-item">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10187"><a href="../../stories/index.html" class="elementor-sub-item">Stories</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14944"><a href="../../shop-2/index.html" class="elementor-item">Shop</a></li>
+</ul></nav>
+<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+<i class="eicon-menu-bar" aria-hidden="true"></i>
+<span class="elementor-screen-only">Menu</span>
+</div>
+<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true"><ul id="menu-2-fcb7819" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-10170"><a href="../../index.html" class="elementor-item">Home</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-10172"><a href="../../index.html" class="elementor-sub-item">Home 1</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10171"><a href="../../home-2/index.html" class="elementor-sub-item">Personal Trainer</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10173"><a href="../../classes/index.html" class="elementor-item">Classes</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10174"><a href="../../outdoor-classes/index.html" class="elementor-sub-item">Outdoor Classes</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10175"><a href="../../group-training/index.html" class="elementor-sub-item">Group Training</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10176"><a href="../../digital-coaching/index.html" class="elementor-sub-item">Digital Coaching</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10177"><a href="../../personal-training/index.html" class="elementor-sub-item">Personal Training</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10178"><a href="../../membership/index.html" class="elementor-item">Membership</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10179"><a href="../../about/index.html" class="elementor-item">About</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14938"><a href="../../about.html" class="elementor-sub-item">F7 Club</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10181"><a href="../../team/index.html" class="elementor-sub-item">Team</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10182"><a href="../../reviews/index.html" class="elementor-sub-item">Reviews</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10183"><a href="../../contact/index.html" class="elementor-sub-item">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19194"><a href="../../schedules/index.html" class="elementor-sub-item">Schedules</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10184"><a href="../../covid-19/index.html" class="elementor-sub-item">Covid-19</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14939"><a href="#" class="elementor-item elementor-item-anchor">Community</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10186"><a href="../../blog/index.html" class="elementor-sub-item">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10187"><a href="../../stories/index.html" class="elementor-sub-item">Stories</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14944"><a href="../../shop-2/index.html" class="elementor-item">Shop</a></li>
+</ul></nav>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-4b8b9c88" data-id="4b8b9c88" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-3335bc07 elementor-tablet-align-justify elementor-widget elementor-widget-button" data-id="3335bc07" data-element_type="widget" data-widget_type="button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a href="../../membership.html" class="elementor-button-link elementor-button elementor-size-xs" role="button">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-icon elementor-align-icon-left">
+<i aria-hidden="true" class="vamtamtheme- vamtam-theme-arrow-right"></i> </span>
+<span class="elementor-button-text">Join Now</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<div id="page" class="main-container">
+<div id="main-content">
+<div id="main" role="main" class="vamtam-main layout-full">
+<div data-elementor-type="product-archive" data-elementor-id="18743" class="elementor elementor-18743 elementor-location-archive product" data-elementor-settings="[]">
+<div class="elementor-section-wrap">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-7bd3b9bc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7bd3b9bc" data-element_type="section">
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-414a754f" data-id="414a754f" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-63b4c46d elementor-widget elementor-widget-theme-archive-title elementor-page-title elementor-widget-heading" data-id="63b4c46d" data-element_type="widget" data-widget_type="theme-archive-title.default">
+<div class="elementor-widget-container">
+<h1 class="elementor-heading-title elementor-size-default">Category: New</h1> </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-60790fb9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="60790fb9" data-element_type="section" data-settings="{&quot;shape_divider_bottom_negative&quot;:&quot;yes&quot;,&quot;shape_divider_bottom&quot;:&quot;triangle-asymmetrical&quot;}">
+<div class="elementor-shape elementor-shape-bottom" data-negative="true">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+<path class="elementor-shape-fill" d="M737.9,94.7L0,0v100h1000V0L737.9,94.7z" />
+</svg> </div>
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7e46fec" data-id="7e46fec" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-77f5adda elementor-product-loop-item--align-left vamtam-has-title-min-height vamtam-has-theme-style elementor-products-grid elementor-wc-products vamtam-has-product-image-theme-anim vamtam-has-product-btn-theme-style elementor-show-pagination-border-yes elementor-widget elementor-widget-wc-archive-products" data-id="77f5adda" data-element_type="widget" data-widget_type="wc-archive-products.default">
+<div class="elementor-widget-container">
+<div class="woocommerce-message" role="alert">
+<a href="../../cart/index.html" tabindex="1" class="button wc-forward">View cart</a> &ldquo;Sport Bottle&rdquo; has been added to your cart.	</div>
+<div class="woocommerce columns-4 "><div class="woocommerce-notices-wrapper"></div><p class="woocommerce-result-count">
+Showing all 14 results</p>
+<form class="woocommerce-ordering" method="get">
+<div class="elementor-field-group">
+<div class="elementor-select-wrapper">
+<select name="orderby" class="orderby elementor-field-textual" aria-label="Shop order">
+<option value="menu_order" selected='selected'>Default sorting</option>
+<option value="popularity">Sort by popularity</option>
+<option value="rating">Sort by average rating</option>
+<option value="date">Sort by latest</option>
+<option value="price">Sort by price: low to high</option>
+<option value="price-desc">Sort by price: high to low</option>
+</select>
+<input type="hidden" name="paged" value="1" />
+</div>
+</div>
+<input type="hidden" name="add-to-cart" value="6224" /></form>
+<ul class="products vamtam-wc columns-4">
+<li class="product type-product post-6246 status-publish first instock product_cat-equipment product_cat-new product_cat-sport product_tag-bodybuilding product_tag-fittness product_tag-life-time-warranty product_tag-sport has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+<a href="../../product/kettlebells-20kg/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="315" height="315" src="../../wp-content/uploads/2021/02/content-pixie-be-6rpnQ30k-unsplash-1-315x315.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://f7.vamtam.com/wp-content/uploads/2021/02/content-pixie-be-6rpnQ30k-unsplash-1-315x315.jpg 315w, https://f7.vamtam.com/wp-content/uploads/2021/02/content-pixie-be-6rpnQ30k-unsplash-1-100x100.jpg 100w, https://f7.vamtam.com/wp-content/uploads/2021/02/content-pixie-be-6rpnQ30k-unsplash-1-150x150.jpg 150w" sizes="(max-width: 315px) 100vw, 315px" /> </a> 
+<div class="vamtam-product-content">
+<a href="../../product/kettlebells-20kg/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">Kettlebells 20kg</h2> </a>
+<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>42.00</bdi></span></span>
+</div>
+
+<div class="vamtam-add-to-cart-wrap"><a href="index0cee.html?add-to-cart=6246" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="6246" data-product_sku="" aria-label="Add &ldquo;Kettlebells 20kg&rdquo; to your cart" rel="nofollow">Add to cart</a></div> </li>
+<li class="product type-product post-6243 status-publish instock product_cat-new product_cat-sport product_cat-sports-nutrition product_tag-energy-bar product_tag-fittness product_tag-protein-bar has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+<a href="../../product/protein-bar-chocolate/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="315" height="315" src="../../wp-content/uploads/2021/02/the-creative-exchange-pkSUvEebhSE-unsplash-1-315x315.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://f7.vamtam.com/wp-content/uploads/2021/02/the-creative-exchange-pkSUvEebhSE-unsplash-1-315x315.jpg 315w, https://f7.vamtam.com/wp-content/uploads/2021/02/the-creative-exchange-pkSUvEebhSE-unsplash-1-100x100.jpg 100w, https://f7.vamtam.com/wp-content/uploads/2021/02/the-creative-exchange-pkSUvEebhSE-unsplash-1-150x150.jpg 150w" sizes="(max-width: 315px) 100vw, 315px" /> </a> 
+<div class="vamtam-product-content">
+<a href="../../product/protein-bar-chocolate/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">Protein Bar Chocolate</h2> </a>
+<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>8.00</bdi></span></span>
+</div>
+
+<div class="vamtam-add-to-cart-wrap"><a href="index5595.html?add-to-cart=6243" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="6243" data-product_sku="" aria-label="Add &ldquo;Protein Bar Chocolate&rdquo; to your cart" rel="nofollow">Add to cart</a></div> </li>
+<li class="product type-product post-6256 status-publish instock product_cat-new product_cat-sport product_tag-drink product_tag-fittness product_tag-protein-shake product_tag-sport has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
+<a href="../../product/protein-shake-biscuits/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+<span class="onsale">Sale!</span>
+<img width="315" height="315" src="../../wp-content/uploads/2021/02/ctrl-a-meal-replacement-X9PHLK8ibyU-unsplash-1-315x315.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://f7.vamtam.com/wp-content/uploads/2021/02/ctrl-a-meal-replacement-X9PHLK8ibyU-unsplash-1-315x315.jpg 315w, https://f7.vamtam.com/wp-content/uploads/2021/02/ctrl-a-meal-replacement-X9PHLK8ibyU-unsplash-1-100x100.jpg 100w, https://f7.vamtam.com/wp-content/uploads/2021/02/ctrl-a-meal-replacement-X9PHLK8ibyU-unsplash-1-150x150.jpg 150w" sizes="(max-width: 315px) 100vw, 315px" /> </a> 
+<div class="vamtam-product-content">
+<a href="../../product/protein-shake-biscuits/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">Protein Shake Biscuits</h2> <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span style="width:80%">Rated <strong class="rating">4.00</strong> out of 5</span></div> </a>
+<span class="price"><del><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>24.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>16.80</bdi></span></ins></span>
+</div>
+
+<div class="vamtam-add-to-cart-wrap"><a href="index73eb.html?add-to-cart=6256" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="6256" data-product_sku="" aria-label="Add &ldquo;Protein Shake Biscuits&rdquo; to your cart" rel="nofollow">Add to cart</a></div> </li>
+<li class="product type-product post-6236 status-publish last instock product_cat-new product_cat-sport product_tag-drink product_tag-fittness product_tag-protein-shake product_tag-sport has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+<a href="../../product/protein-shake-cinnamon/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="315" height="315" src="../../wp-content/uploads/2021/02/ctrl-a-meal-replacement-6k4xq51ZOdY-unsplash-1-315x315.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://f7.vamtam.com/wp-content/uploads/2021/02/ctrl-a-meal-replacement-6k4xq51ZOdY-unsplash-1-315x315.jpg 315w, https://f7.vamtam.com/wp-content/uploads/2021/02/ctrl-a-meal-replacement-6k4xq51ZOdY-unsplash-1-100x100.jpg 100w, https://f7.vamtam.com/wp-content/uploads/2021/02/ctrl-a-meal-replacement-6k4xq51ZOdY-unsplash-1-150x150.jpg 150w" sizes="(max-width: 315px) 100vw, 315px" /> </a> 
+<div class="vamtam-product-content">
+<a href="../../product/protein-shake-cinnamon/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">Protein Shake Cinnamon</h2> </a>
+<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>24.00</bdi></span></span>
+</div>
+
+<div class="vamtam-add-to-cart-wrap"><a href="index5dcf.html?add-to-cart=6236" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="6236" data-product_sku="" aria-label="Add &ldquo;Protein Shake Cinnamon&rdquo; to your cart" rel="nofollow">Add to cart</a></div> </li>
+<li class="product type-product post-6231 status-publish first instock product_cat-new product_cat-sport product_tag-drink product_tag-fittness product_tag-protein-shake product_tag-sport has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+<a href="../../product/protein-shake-fruity/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="315" height="315" src="../../wp-content/uploads/2021/02/ctrl-a-meal-replacement-AvwKOFYRorA-unsplash-1-315x315.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://f7.vamtam.com/wp-content/uploads/2021/02/ctrl-a-meal-replacement-AvwKOFYRorA-unsplash-1-315x315.jpg 315w, https://f7.vamtam.com/wp-content/uploads/2021/02/ctrl-a-meal-replacement-AvwKOFYRorA-unsplash-1-100x100.jpg 100w, https://f7.vamtam.com/wp-content/uploads/2021/02/ctrl-a-meal-replacement-AvwKOFYRorA-unsplash-1-150x150.jpg 150w" sizes="(max-width: 315px) 100vw, 315px" /> </a> 
+<div class="vamtam-product-content">
+<a href="../../product/protein-shake-fruity/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">Protein Shake Fruity</h2> </a>
+<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>24.00</bdi></span></span>
+</div>
+
+<div class="vamtam-add-to-cart-wrap"><a href="index6081.html?add-to-cart=6231" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="6231" data-product_sku="" aria-label="Add &ldquo;Protein Shake Fruity&rdquo; to your cart" rel="nofollow">Add to cart</a></div> </li>
+<li class="product type-product post-6252 status-publish instock product_cat-new product_cat-sport product_tag-drink product_tag-fittness product_tag-protein-shake product_tag-sport has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+<a href="../../product/protein-shake-fruity-2/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="315" height="315" src="../../wp-content/uploads/2021/02/devin-avery-46n1T0BMKUM-unsplash-1-315x315.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://f7.vamtam.com/wp-content/uploads/2021/02/devin-avery-46n1T0BMKUM-unsplash-1-315x315.jpg 315w, https://f7.vamtam.com/wp-content/uploads/2021/02/devin-avery-46n1T0BMKUM-unsplash-1-100x100.jpg 100w, https://f7.vamtam.com/wp-content/uploads/2021/02/devin-avery-46n1T0BMKUM-unsplash-1-150x150.jpg 150w" sizes="(max-width: 315px) 100vw, 315px" /> </a> 
+<div class="vamtam-product-content">
+<a href="../../product/protein-shake-fruity-2/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">Protein Shake Fruity</h2> </a>
+<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>24.00</bdi></span></span>
+</div>
+
+<div class="vamtam-add-to-cart-wrap"><a href="indexfb13.html?add-to-cart=6252" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="6252" data-product_sku="" aria-label="Add &ldquo;Protein Shake Fruity&rdquo; to your cart" rel="nofollow">Add to cart</a></div> </li>
+<li class="product type-product post-6238 status-publish instock product_cat-new product_cat-sport product_tag-drink product_tag-fittness product_tag-protein-shake product_tag-sport has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+<a href="../../product/protein-shake-strawberry/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="315" height="315" src="../../wp-content/uploads/2021/02/lyfe-fuel-C05u9Xh37to-unsplash-1-315x315.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://f7.vamtam.com/wp-content/uploads/2021/02/lyfe-fuel-C05u9Xh37to-unsplash-1-315x315.jpg 315w, https://f7.vamtam.com/wp-content/uploads/2021/02/lyfe-fuel-C05u9Xh37to-unsplash-1-100x100.jpg 100w" sizes="(max-width: 315px) 100vw, 315px" /> </a> 
+<div class="vamtam-product-content">
+<a href="../../product/protein-shake-strawberry/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">Protein Shake Strawberry</h2> </a>
+<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>29.00</bdi></span></span>
+</div>
+
+<div class="vamtam-add-to-cart-wrap"><a href="index5c26.html?add-to-cart=6238" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="6238" data-product_sku="" aria-label="Add &ldquo;Protein Shake Strawberry&rdquo; to your cart" rel="nofollow">Add to cart</a></div> </li>
+<li class="product type-product post-14712 status-publish last instock product_cat-new product_cat-sport product_tag-drink product_tag-fittness product_tag-protein-shake product_tag-sport has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+<a href="../../product/protein-shake-vegan/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="315" height="315" src="../../wp-content/uploads/2021/03/ctrl-a-meal-replacement-6k4xq51ZOdY-unsplash1-315x315.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://f7.vamtam.com/wp-content/uploads/2021/03/ctrl-a-meal-replacement-6k4xq51ZOdY-unsplash1-315x315.jpg 315w, https://f7.vamtam.com/wp-content/uploads/2021/03/ctrl-a-meal-replacement-6k4xq51ZOdY-unsplash1-100x100.jpg 100w, https://f7.vamtam.com/wp-content/uploads/2021/03/ctrl-a-meal-replacement-6k4xq51ZOdY-unsplash1-150x150.jpg 150w" sizes="(max-width: 315px) 100vw, 315px" /> </a> 
+<div class="vamtam-product-content">
+<a href="../../product/protein-shake-vegan/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">Protein Shake Vegan</h2> </a>
+<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>29.00</bdi></span></span>
+</div>
+
+<div class="vamtam-add-to-cart-wrap"><a href="indexaef8.html?add-to-cart=14712" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="14712" data-product_sku="" aria-label="Add &ldquo;Protein Shake Vegan&rdquo; to your cart" rel="nofollow">Add to cart</a></div> </li>
+<li class="product type-product post-6254 status-publish first instock product_cat-new product_cat-sport product_tag-drink product_tag-fittness product_tag-protein-shake product_tag-sport has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+<a href="../../product/protein-water-blueberry/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="315" height="315" src="../../wp-content/uploads/2021/02/humphrey-muleba-ZqO46bkl8MQ-unsplash-1-315x315.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://f7.vamtam.com/wp-content/uploads/2021/02/humphrey-muleba-ZqO46bkl8MQ-unsplash-1-315x315.jpg 315w, https://f7.vamtam.com/wp-content/uploads/2021/02/humphrey-muleba-ZqO46bkl8MQ-unsplash-1-100x100.jpg 100w, https://f7.vamtam.com/wp-content/uploads/2021/02/humphrey-muleba-ZqO46bkl8MQ-unsplash-1-150x150.jpg 150w" sizes="(max-width: 315px) 100vw, 315px" /> </a> 
+<div class="vamtam-product-content">
+<a href="../../product/protein-water-blueberry/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">Protein Water Blueberry</h2> </a>
+<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>12.00</bdi></span></span>
+</div>
+
+<div class="vamtam-add-to-cart-wrap"><a href="indexa7e6.html?add-to-cart=6254" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="6254" data-product_sku="" aria-label="Add &ldquo;Protein Water Blueberry&rdquo; to your cart" rel="nofollow">Add to cart</a></div> </li>
+<li class="product type-product post-6224 status-publish instock product_cat-bottle product_cat-new product_cat-sport product_tag-bodybuilding product_tag-bottle product_tag-fittness product_tag-life-time-warranty product_tag-sport has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+<a href="../../product/sport-bottle/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="315" height="315" src="../../wp-content/uploads/2021/02/ctrl-a-meal-replacement-t8I8L4JHCPE-unsplash-1-315x315.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://f7.vamtam.com/wp-content/uploads/2021/02/ctrl-a-meal-replacement-t8I8L4JHCPE-unsplash-1-315x315.jpg 315w, https://f7.vamtam.com/wp-content/uploads/2021/02/ctrl-a-meal-replacement-t8I8L4JHCPE-unsplash-1-100x100.jpg 100w, https://f7.vamtam.com/wp-content/uploads/2021/02/ctrl-a-meal-replacement-t8I8L4JHCPE-unsplash-1-150x150.jpg 150w" sizes="(max-width: 315px) 100vw, 315px" /> </a> 
+<div class="vamtam-product-content">
+<a href="../../product/sport-bottle/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">Sport Bottle</h2> </a>
+<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>12.00</bdi></span></span>
+</div>
+
+<div class="vamtam-add-to-cart-wrap"><a href="index330b.html?add-to-cart=6224" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="6224" data-product_sku="" aria-label="Add &ldquo;Sport Bottle&rdquo; to your cart" rel="nofollow">Add to cart</a></div> </li>
+<li class="product type-product post-6234 status-publish instock product_cat-bottle product_cat-new product_cat-sport product_tag-bodybuilding product_tag-bottle product_tag-fittness product_tag-life-time-warranty product_tag-sport has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+<a href="../../product/sport-bottle-2/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="315" height="315" src="../../wp-content/uploads/2021/02/ctrl-a-meal-replacement-baCwq7-mZrQ-unsplash-1-315x315.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://f7.vamtam.com/wp-content/uploads/2021/02/ctrl-a-meal-replacement-baCwq7-mZrQ-unsplash-1-315x315.jpg 315w, https://f7.vamtam.com/wp-content/uploads/2021/02/ctrl-a-meal-replacement-baCwq7-mZrQ-unsplash-1-100x100.jpg 100w, https://f7.vamtam.com/wp-content/uploads/2021/02/ctrl-a-meal-replacement-baCwq7-mZrQ-unsplash-1-150x150.jpg 150w" sizes="(max-width: 315px) 100vw, 315px" /> </a> 
+<div class="vamtam-product-content">
+<a href="../../product/sport-bottle-2/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">Sport Bottle</h2> </a>
+<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>12.00</bdi></span></span>
+</div>
+
+<div class="vamtam-add-to-cart-wrap"><a href="index81db.html?add-to-cart=6234" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="6234" data-product_sku="" aria-label="Add &ldquo;Sport Bottle&rdquo; to your cart" rel="nofollow">Add to cart</a></div> </li>
+<li class="product type-product post-6250 status-publish last instock product_cat-bottle product_cat-new product_cat-sport product_tag-bodybuilding product_tag-bottle product_tag-fittness product_tag-life-time-warranty product_tag-sport has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+<a href="../../product/sport-bottle-3/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="315" height="315" src="../../wp-content/uploads/2021/02/ctrl-a-meal-replacement-pUmVQ3Pzrwo-unsplash-1-315x315.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://f7.vamtam.com/wp-content/uploads/2021/02/ctrl-a-meal-replacement-pUmVQ3Pzrwo-unsplash-1-315x315.jpg 315w, https://f7.vamtam.com/wp-content/uploads/2021/02/ctrl-a-meal-replacement-pUmVQ3Pzrwo-unsplash-1-100x100.jpg 100w, https://f7.vamtam.com/wp-content/uploads/2021/02/ctrl-a-meal-replacement-pUmVQ3Pzrwo-unsplash-1-150x150.jpg 150w" sizes="(max-width: 315px) 100vw, 315px" /> </a> 
+<div class="vamtam-product-content">
+<a href="../../product/sport-bottle-3/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">Sport Bottle</h2> </a>
+<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>12.00</bdi></span></span>
+</div>
+
+<div class="vamtam-add-to-cart-wrap"><a href="indexbbf8.html?add-to-cart=6250" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="6250" data-product_sku="" aria-label="Add &ldquo;Sport Bottle&rdquo; to your cart" rel="nofollow">Add to cart</a></div> </li>
+<li class="product type-product post-14691 status-publish first instock product_cat-bottle product_cat-new product_cat-sport product_tag-bodybuilding product_tag-bottle product_tag-fittness product_tag-life-time-warranty product_tag-sport has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+<a href="../../product/sport-bottle-4/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="315" height="315" src="../../wp-content/uploads/2021/03/joan-tran-reEySFadyJQ-unsplash-315x315.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://f7.vamtam.com/wp-content/uploads/2021/03/joan-tran-reEySFadyJQ-unsplash-315x315.jpg 315w, https://f7.vamtam.com/wp-content/uploads/2021/03/joan-tran-reEySFadyJQ-unsplash-100x100.jpg 100w, https://f7.vamtam.com/wp-content/uploads/2021/03/joan-tran-reEySFadyJQ-unsplash-150x150.jpg 150w" sizes="(max-width: 315px) 100vw, 315px" /> </a> 
+<div class="vamtam-product-content">
+<a href="../../product/sport-bottle-4/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">Sport Bottle</h2> </a>
+<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>12.00</bdi></span></span>
+</div>
+
+<div class="vamtam-add-to-cart-wrap"><a href="indexc4a3.html?add-to-cart=14691" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="14691" data-product_sku="" aria-label="Add &ldquo;Sport Bottle&rdquo; to your cart" rel="nofollow">Add to cart</a></div> </li>
+<li class="product type-product post-6248 status-publish instock product_cat-new product_cat-sport product_tag-fittness product_tag-sport has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+<a href="../../product/sports-top/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="315" height="315" src="../../wp-content/uploads/2021/02/jacob-bentzinger-MThIIpW8rpU-unsplash-1-315x315.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://f7.vamtam.com/wp-content/uploads/2021/02/jacob-bentzinger-MThIIpW8rpU-unsplash-1-315x315.jpg 315w, https://f7.vamtam.com/wp-content/uploads/2021/02/jacob-bentzinger-MThIIpW8rpU-unsplash-1-100x100.jpg 100w, https://f7.vamtam.com/wp-content/uploads/2021/02/jacob-bentzinger-MThIIpW8rpU-unsplash-1-150x150.jpg 150w" sizes="(max-width: 315px) 100vw, 315px" /> </a> 
+<div class="vamtam-product-content">
+<a href="../../product/sports-top/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">Sports Top</h2> </a>
+<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>24.00</bdi></span></span>
+</div>
+
+<div class="vamtam-add-to-cart-wrap"><a href="indexf012.html?add-to-cart=6248" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="6248" data-product_sku="" aria-label="Add &ldquo;Sports Top&rdquo; to your cart" rel="nofollow">Add to cart</a></div> </li>
+</ul>
+</div> </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-788591fb elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="788591fb" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6a4895b4" data-id="6a4895b4" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-7c6cdbde elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="7c6cdbde" data-element_type="widget" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h6 class="elementor-heading-title elementor-size-default">follow</h6> </div>
+</div>
+<div class="elementor-element elementor-element-183ad061 elementor-widget__width-auto vamtam-has-theme-style elementor-widget elementor-widget-button" data-id="183ad061" data-element_type="widget" data-widget_type="button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a href="https://www.instagram.com/vamtam.themes/" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-text">#F7_LoveYourLife</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-a2ad66a elementor-widget elementor-widget-wp-widget-instagram-feed-widget" data-id="a2ad66a" data-element_type="widget" data-widget_type="wp-widget-instagram-feed-widget.default">
+<div class="elementor-widget-container">
+<div id="sb_instagram" class="sbi  sbi_mob_col_auto sbi_col_8  sbi_width_resp" style="width: 100%;" data-feedid="sbi_+VAMTAMTHEMEFITNESS2#8" data-res="auto" data-cols="8" data-colsmobile="auto" data-num="8" data-nummobile="" data-shortcode-atts="{}" data-postid="6246" data-options="{&quot;grid&quot;:true,&quot;avatars&quot;:[],&quot;disablelightbox&quot;:true,&quot;colsmobile&quot;:&quot;auto&quot;,&quot;captionsize&quot;:13,&quot;captionlength&quot;:50}" data-sbi-flags="favorLocal">
+<div id="sbi_images">
+<div class="sbi_item sbi_type_image sbi_new sbi_transition" id="sbi_17933631874476225" data-date="1613379357" data-numcomments="0">
+<div class="sbi_photo_wrap">
+<div class="sbi_link sbi_disable_lightbox">
+ <div class="sbi_hover_top">
+<p class="sbi_username">
+<a href="https://www.instagram.com//" target="_blank" rel="nofollow noopener" style="color: rgba(255,255,255,1)"></a>
+</p>
+</div>
+<a class="sbi_instagram_link" href="https://www.instagram.com/p/CLTpJnblfKu/" target="_blank" rel="nofollow noopener" title="Instagram" style="color: rgba(255,255,255,1)">
+<span class="sbi-screenreader">View</span>
+<svg class="svg-inline--fa fa-instagram fa-w-14" aria-hidden="true" data-fa-processed="" aria-label="Instagram" data-prefix="fab" data-icon="instagram" role="img" viewBox="0 0 448 512">
+<path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+</svg> </a>
+<div class="sbi_hover_bottom" style="color: rgba(255,255,255,1)">
+<p>
+<span class="sbi_date">
+<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="far" data-icon="clock" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg> Feb 15</span>
+</p>
+</div>
+<a class="sbi_link_area nofancybox" href="../../../scontent-dfw5-1.cdninstagram.com/v/t51.29350-15/149384987_842939259595869_3643698726766741840_n6d06.jpg?_nc_cat=111&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=ihvOLQp2NP0AX_HyC5A&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=7e478193642483b74c6f0274a8da8a52&amp;oe=60A90683" rel="nofollow noopener" data-lightbox-sbi="" data-title="#vamtamthemefitness2" data-video="" data-carousel="" data-id="sbi_17933631874476225" data-user="" data-url="https://www.instagram.com/p/CLTpJnblfKu/" data-avatar="" data-account-type="business">
+<span class="sbi-screenreader">Open</span>
+</a>
+</div>
+<a class="sbi_photo" href="https://www.instagram.com/p/CLTpJnblfKu/" target="_blank" rel="nofollow noopener" data-full-res="https://scontent-dfw5-1.cdninstagram.com/v/t51.29350-15/149384987_842939259595869_3643698726766741840_n.jpg?_nc_cat=111&#038;ccb=1-3&#038;_nc_sid=8ae9d6&#038;_nc_ohc=ihvOLQp2NP0AX_HyC5A&#038;_nc_ht=scontent-dfw5-1.cdninstagram.com&#038;oh=7e478193642483b74c6f0274a8da8a52&#038;oe=60A90683" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/149384987_842939259595869_3643698726766741840_n.jpg?_nc_cat=111&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=ihvOLQp2NP0AX_HyC5A&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=7e478193642483b74c6f0274a8da8a52&amp;oe=60A90683&quot;,&quot;150&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/149384987_842939259595869_3643698726766741840_n.jpg?_nc_cat=111&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=ihvOLQp2NP0AX_HyC5A&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=7e478193642483b74c6f0274a8da8a52&amp;oe=60A90683&quot;,&quot;320&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/149384987_842939259595869_3643698726766741840_n.jpg?_nc_cat=111&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=ihvOLQp2NP0AX_HyC5A&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=7e478193642483b74c6f0274a8da8a52&amp;oe=60A90683&quot;,&quot;640&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/149384987_842939259595869_3643698726766741840_n.jpg?_nc_cat=111&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=ihvOLQp2NP0AX_HyC5A&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=7e478193642483b74c6f0274a8da8a52&amp;oe=60A90683&quot;}">
+<img src="../../wp-content/plugins/instagram-feed-pro/img/placeholder.png" alt="#vamtamthemefitness2">
+</a>
+</div>
+<div class="sbi_info">
+</div>
+</div><div class="sbi_item sbi_type_image sbi_new sbi_transition" id="sbi_17883965111061600" data-date="1613379557" data-numcomments="0">
+<div class="sbi_photo_wrap">
+<div class="sbi_link sbi_disable_lightbox">
+<div class="sbi_hover_top">
+<p class="sbi_username">
+<a href="https://www.instagram.com//" target="_blank" rel="nofollow noopener" style="color: rgba(255,255,255,1)"></a>
+</p>
+</div>
+<a class="sbi_instagram_link" href="https://www.instagram.com/p/CLTpiEPFHfw/" target="_blank" rel="nofollow noopener" title="Instagram" style="color: rgba(255,255,255,1)">
+<span class="sbi-screenreader">View</span>
+<svg class="svg-inline--fa fa-instagram fa-w-14" aria-hidden="true" data-fa-processed="" aria-label="Instagram" data-prefix="fab" data-icon="instagram" role="img" viewBox="0 0 448 512">
+<path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+</svg> </a>
+<div class="sbi_hover_bottom" style="color: rgba(255,255,255,1)">
+<p>
+<span class="sbi_date">
+<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="far" data-icon="clock" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg> Feb 15</span>
+</p>
+</div>
+ <a class="sbi_link_area nofancybox" href="../../../scontent-dfw5-1.cdninstagram.com/v/t51.29350-15/149780051_172497447742275_3454407433146678916_n7287.jpg?_nc_cat=105&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=2LNqpLXAfSEAX-15yX3&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=03f40a95be3126b7c3632c9624047fee&amp;oe=60A9568F" rel="nofollow noopener" data-lightbox-sbi="" data-title="#vamtamthemefitness2" data-video="" data-carousel="" data-id="sbi_17883965111061600" data-user="" data-url="https://www.instagram.com/p/CLTpiEPFHfw/" data-avatar="" data-account-type="business">
+<span class="sbi-screenreader">Open</span>
+</a>
+</div>
+<a class="sbi_photo" href="https://www.instagram.com/p/CLTpiEPFHfw/" target="_blank" rel="nofollow noopener" data-full-res="https://scontent-dfw5-1.cdninstagram.com/v/t51.29350-15/149780051_172497447742275_3454407433146678916_n.jpg?_nc_cat=105&#038;ccb=1-3&#038;_nc_sid=8ae9d6&#038;_nc_ohc=2LNqpLXAfSEAX-15yX3&#038;_nc_ht=scontent-dfw5-1.cdninstagram.com&#038;oh=03f40a95be3126b7c3632c9624047fee&#038;oe=60A9568F" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/149780051_172497447742275_3454407433146678916_n.jpg?_nc_cat=105&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=2LNqpLXAfSEAX-15yX3&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=03f40a95be3126b7c3632c9624047fee&amp;oe=60A9568F&quot;,&quot;150&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/149780051_172497447742275_3454407433146678916_n.jpg?_nc_cat=105&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=2LNqpLXAfSEAX-15yX3&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=03f40a95be3126b7c3632c9624047fee&amp;oe=60A9568F&quot;,&quot;320&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/149780051_172497447742275_3454407433146678916_n.jpg?_nc_cat=105&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=2LNqpLXAfSEAX-15yX3&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=03f40a95be3126b7c3632c9624047fee&amp;oe=60A9568F&quot;,&quot;640&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/149780051_172497447742275_3454407433146678916_n.jpg?_nc_cat=105&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=2LNqpLXAfSEAX-15yX3&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=03f40a95be3126b7c3632c9624047fee&amp;oe=60A9568F&quot;}">
+<img src="../../wp-content/plugins/instagram-feed-pro/img/placeholder.png" alt="#vamtamthemefitness2">
+</a>
+</div>
+<div class="sbi_info">
+</div>
+</div><div class="sbi_item sbi_type_image sbi_new sbi_transition" id="sbi_17905198255707978" data-date="1613379496" data-numcomments="0">
+<div class="sbi_photo_wrap">
+<div class="sbi_link sbi_disable_lightbox">
+<div class="sbi_hover_top">
+<p class="sbi_username">
+<a href="https://www.instagram.com//" target="_blank" rel="nofollow noopener" style="color: rgba(255,255,255,1)"></a>
+</p>
+</div>
+<a class="sbi_instagram_link" href="https://www.instagram.com/p/CLTpajHlAW0/" target="_blank" rel="nofollow noopener" title="Instagram" style="color: rgba(255,255,255,1)">
+<span class="sbi-screenreader">View</span>
+<svg class="svg-inline--fa fa-instagram fa-w-14" aria-hidden="true" data-fa-processed="" aria-label="Instagram" data-prefix="fab" data-icon="instagram" role="img" viewBox="0 0 448 512">
+<path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+</svg> </a>
+<div class="sbi_hover_bottom" style="color: rgba(255,255,255,1)">
+<p>
+<span class="sbi_date">
+<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="far" data-icon="clock" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg> Feb 15</span>
+</p>
+</div>
+<a class="sbi_link_area nofancybox" href="../../../scontent-dfw5-1.cdninstagram.com/v/t51.29350-15/149831343_1830194480492346_1323700148335757677_n8723.jpg?_nc_cat=111&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=ioJny_IUPHIAX8fbSrG&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=3e2b23bc44b7d897e09d6d303e7477c2&amp;oe=60ACC3E1" rel="nofollow noopener" data-lightbox-sbi="" data-title="#vamtamthemefitness2" data-video="" data-carousel="" data-id="sbi_17905198255707978" data-user="" data-url="https://www.instagram.com/p/CLTpajHlAW0/" data-avatar="" data-account-type="business">
+<span class="sbi-screenreader">Open</span>
+</a>
+</div>
+<a class="sbi_photo" href="https://www.instagram.com/p/CLTpajHlAW0/" target="_blank" rel="nofollow noopener" data-full-res="https://scontent-dfw5-1.cdninstagram.com/v/t51.29350-15/149831343_1830194480492346_1323700148335757677_n.jpg?_nc_cat=111&#038;ccb=1-3&#038;_nc_sid=8ae9d6&#038;_nc_ohc=ioJny_IUPHIAX8fbSrG&#038;_nc_ht=scontent-dfw5-1.cdninstagram.com&#038;oh=3e2b23bc44b7d897e09d6d303e7477c2&#038;oe=60ACC3E1" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/149831343_1830194480492346_1323700148335757677_n.jpg?_nc_cat=111&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=ioJny_IUPHIAX8fbSrG&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=3e2b23bc44b7d897e09d6d303e7477c2&amp;oe=60ACC3E1&quot;,&quot;150&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/149831343_1830194480492346_1323700148335757677_n.jpg?_nc_cat=111&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=ioJny_IUPHIAX8fbSrG&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=3e2b23bc44b7d897e09d6d303e7477c2&amp;oe=60ACC3E1&quot;,&quot;320&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/149831343_1830194480492346_1323700148335757677_n.jpg?_nc_cat=111&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=ioJny_IUPHIAX8fbSrG&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=3e2b23bc44b7d897e09d6d303e7477c2&amp;oe=60ACC3E1&quot;,&quot;640&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/149831343_1830194480492346_1323700148335757677_n.jpg?_nc_cat=111&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=ioJny_IUPHIAX8fbSrG&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=3e2b23bc44b7d897e09d6d303e7477c2&amp;oe=60ACC3E1&quot;}">
+<img src="../../wp-content/plugins/instagram-feed-pro/img/placeholder.png" alt="#vamtamthemefitness2">
+</a>
+</div>
+<div class="sbi_info">
+</div>
+</div><div class="sbi_item sbi_type_image sbi_new sbi_transition" id="sbi_17887237145007709" data-date="1613379456" data-numcomments="0">
+<div class="sbi_photo_wrap">
+<div class="sbi_link sbi_disable_lightbox">
+<div class="sbi_hover_top">
+<p class="sbi_username">
+<a href="https://www.instagram.com//" target="_blank" rel="nofollow noopener" style="color: rgba(255,255,255,1)"></a>
+</p>
+</div>
+<a class="sbi_instagram_link" href="https://www.instagram.com/p/CLTpVtVlBez/" target="_blank" rel="nofollow noopener" title="Instagram" style="color: rgba(255,255,255,1)">
+<span class="sbi-screenreader">View</span>
+<svg class="svg-inline--fa fa-instagram fa-w-14" aria-hidden="true" data-fa-processed="" aria-label="Instagram" data-prefix="fab" data-icon="instagram" role="img" viewBox="0 0 448 512">
+<path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+</svg> </a>
+<div class="sbi_hover_bottom" style="color: rgba(255,255,255,1)">
+<p>
+<span class="sbi_date">
+<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="far" data-icon="clock" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg> Feb 15</span>
+</p>
+</div>
+<a class="sbi_link_area nofancybox" href="../../../scontent-dfw5-1.cdninstagram.com/v/t51.29350-15/149783819_1322285844823851_787730271173955498_n4c44.jpg?_nc_cat=103&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=zDo_lm2caI8AX-0Q9Zo&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=74e1066aa4934c54f03e73a4d66db31a&amp;oe=60AA4D9D" rel="nofollow noopener" data-lightbox-sbi="" data-title="#vamtamthemefitness2" data-video="" data-carousel="" data-id="sbi_17887237145007709" data-user="" data-url="https://www.instagram.com/p/CLTpVtVlBez/" data-avatar="" data-account-type="business">
+<span class="sbi-screenreader">Open</span>
+</a>
+</div>
+<a class="sbi_photo" href="https://www.instagram.com/p/CLTpVtVlBez/" target="_blank" rel="nofollow noopener" data-full-res="https://scontent-dfw5-1.cdninstagram.com/v/t51.29350-15/149783819_1322285844823851_787730271173955498_n.jpg?_nc_cat=103&#038;ccb=1-3&#038;_nc_sid=8ae9d6&#038;_nc_ohc=zDo_lm2caI8AX-0Q9Zo&#038;_nc_ht=scontent-dfw5-1.cdninstagram.com&#038;oh=74e1066aa4934c54f03e73a4d66db31a&#038;oe=60AA4D9D" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/149783819_1322285844823851_787730271173955498_n.jpg?_nc_cat=103&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=zDo_lm2caI8AX-0Q9Zo&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=74e1066aa4934c54f03e73a4d66db31a&amp;oe=60AA4D9D&quot;,&quot;150&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/149783819_1322285844823851_787730271173955498_n.jpg?_nc_cat=103&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=zDo_lm2caI8AX-0Q9Zo&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=74e1066aa4934c54f03e73a4d66db31a&amp;oe=60AA4D9D&quot;,&quot;320&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/149783819_1322285844823851_787730271173955498_n.jpg?_nc_cat=103&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=zDo_lm2caI8AX-0Q9Zo&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=74e1066aa4934c54f03e73a4d66db31a&amp;oe=60AA4D9D&quot;,&quot;640&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/149783819_1322285844823851_787730271173955498_n.jpg?_nc_cat=103&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=zDo_lm2caI8AX-0Q9Zo&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=74e1066aa4934c54f03e73a4d66db31a&amp;oe=60AA4D9D&quot;}">
+<img src="../../wp-content/plugins/instagram-feed-pro/img/placeholder.png" alt="#vamtamthemefitness2">
+</a>
+</div>
+<div class="sbi_info">
+</div>
+</div><div class="sbi_item sbi_type_image sbi_new sbi_transition" id="sbi_18120910309175330" data-date="1613379415" data-numcomments="0">
+<div class="sbi_photo_wrap">
+<div class="sbi_link sbi_disable_lightbox">
+<div class="sbi_hover_top">
+<p class="sbi_username">
+<a href="https://www.instagram.com//" target="_blank" rel="nofollow noopener" style="color: rgba(255,255,255,1)"></a>
+</p>
+</div>
+<a class="sbi_instagram_link" href="https://www.instagram.com/p/CLTpQoqFc5_/" target="_blank" rel="nofollow noopener" title="Instagram" style="color: rgba(255,255,255,1)">
+<span class="sbi-screenreader">View</span>
+<svg class="svg-inline--fa fa-instagram fa-w-14" aria-hidden="true" data-fa-processed="" aria-label="Instagram" data-prefix="fab" data-icon="instagram" role="img" viewBox="0 0 448 512">
+<path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+</svg> </a>
+<div class="sbi_hover_bottom" style="color: rgba(255,255,255,1)">
+<p>
+<span class="sbi_date">
+<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="far" data-icon="clock" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg> Feb 15</span>
+</p>
+</div>
+<a class="sbi_link_area nofancybox" href="../../../scontent-dfw5-1.cdninstagram.com/v/t51.29350-15/150116413_707961803215781_6620700934581791279_n2d61.jpg?_nc_cat=105&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=musUNeeo3ksAX-KkSsK&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=80f656a214471399c51a2920bed3a4c2&amp;oe=60A93F5F" rel="nofollow noopener" data-lightbox-sbi="" data-title="#vamtamthemefitness2" data-video="" data-carousel="" data-id="sbi_18120910309175330" data-user="" data-url="https://www.instagram.com/p/CLTpQoqFc5_/" data-avatar="" data-account-type="business">
+<span class="sbi-screenreader">Open</span>
+</a>
+</div>
+<a class="sbi_photo" href="https://www.instagram.com/p/CLTpQoqFc5_/" target="_blank" rel="nofollow noopener" data-full-res="https://scontent-dfw5-1.cdninstagram.com/v/t51.29350-15/150116413_707961803215781_6620700934581791279_n.jpg?_nc_cat=105&#038;ccb=1-3&#038;_nc_sid=8ae9d6&#038;_nc_ohc=musUNeeo3ksAX-KkSsK&#038;_nc_ht=scontent-dfw5-1.cdninstagram.com&#038;oh=80f656a214471399c51a2920bed3a4c2&#038;oe=60A93F5F" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/150116413_707961803215781_6620700934581791279_n.jpg?_nc_cat=105&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=musUNeeo3ksAX-KkSsK&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=80f656a214471399c51a2920bed3a4c2&amp;oe=60A93F5F&quot;,&quot;150&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/150116413_707961803215781_6620700934581791279_n.jpg?_nc_cat=105&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=musUNeeo3ksAX-KkSsK&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=80f656a214471399c51a2920bed3a4c2&amp;oe=60A93F5F&quot;,&quot;320&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/150116413_707961803215781_6620700934581791279_n.jpg?_nc_cat=105&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=musUNeeo3ksAX-KkSsK&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=80f656a214471399c51a2920bed3a4c2&amp;oe=60A93F5F&quot;,&quot;640&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/150116413_707961803215781_6620700934581791279_n.jpg?_nc_cat=105&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=musUNeeo3ksAX-KkSsK&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=80f656a214471399c51a2920bed3a4c2&amp;oe=60A93F5F&quot;}">
+<img src="../../wp-content/plugins/instagram-feed-pro/img/placeholder.png" alt="#vamtamthemefitness2">
+</a>
+</div>
+<div class="sbi_info">
+</div>
+</div><div class="sbi_item sbi_type_image sbi_new sbi_transition" id="sbi_17936336404448511" data-date="1613379512" data-numcomments="0">
+<div class="sbi_photo_wrap">
+<div class="sbi_link sbi_disable_lightbox">
+<div class="sbi_hover_top">
+<p class="sbi_username">
+<a href="https://www.instagram.com//" target="_blank" rel="nofollow noopener" style="color: rgba(255,255,255,1)"></a>
+</p>
+</div>
+<a class="sbi_instagram_link" href="https://www.instagram.com/p/CLTpck1F3dT/" target="_blank" rel="nofollow noopener" title="Instagram" style="color: rgba(255,255,255,1)">
+<span class="sbi-screenreader">View</span>
+<svg class="svg-inline--fa fa-instagram fa-w-14" aria-hidden="true" data-fa-processed="" aria-label="Instagram" data-prefix="fab" data-icon="instagram" role="img" viewBox="0 0 448 512">
+<path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+</svg> </a>
+<div class="sbi_hover_bottom" style="color: rgba(255,255,255,1)">
+<p>
+<span class="sbi_date">
+<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="far" data-icon="clock" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg> Feb 15</span>
+</p>
+</div>
+<a class="sbi_link_area nofancybox" href="../../../scontent-dfw5-1.cdninstagram.com/v/t51.29350-15/150259960_768315154083827_7650690820195578462_n8d9e.jpg?_nc_cat=105&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=Dz3Ed4146vsAX_g8_5-&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=478587fd90c071cf41a7f6b6c0d6ade8&amp;oe=60A98EF6" rel="nofollow noopener" data-lightbox-sbi="" data-title="#vamtamthemefitness2" data-video="" data-carousel="" data-id="sbi_17936336404448511" data-user="" data-url="https://www.instagram.com/p/CLTpck1F3dT/" data-avatar="" data-account-type="business">
+<span class="sbi-screenreader">Open</span>
+</a>
+</div>
+<a class="sbi_photo" href="https://www.instagram.com/p/CLTpck1F3dT/" target="_blank" rel="nofollow noopener" data-full-res="https://scontent-dfw5-1.cdninstagram.com/v/t51.29350-15/150259960_768315154083827_7650690820195578462_n.jpg?_nc_cat=105&#038;ccb=1-3&#038;_nc_sid=8ae9d6&#038;_nc_ohc=Dz3Ed4146vsAX_g8_5-&#038;_nc_ht=scontent-dfw5-1.cdninstagram.com&#038;oh=478587fd90c071cf41a7f6b6c0d6ade8&#038;oe=60A98EF6" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/150259960_768315154083827_7650690820195578462_n.jpg?_nc_cat=105&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=Dz3Ed4146vsAX_g8_5-&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=478587fd90c071cf41a7f6b6c0d6ade8&amp;oe=60A98EF6&quot;,&quot;150&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/150259960_768315154083827_7650690820195578462_n.jpg?_nc_cat=105&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=Dz3Ed4146vsAX_g8_5-&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=478587fd90c071cf41a7f6b6c0d6ade8&amp;oe=60A98EF6&quot;,&quot;320&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/150259960_768315154083827_7650690820195578462_n.jpg?_nc_cat=105&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=Dz3Ed4146vsAX_g8_5-&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=478587fd90c071cf41a7f6b6c0d6ade8&amp;oe=60A98EF6&quot;,&quot;640&quot;:&quot;https:\/\/scontent-dfw5-1.cdninstagram.com\/v\/t51.29350-15\/150259960_768315154083827_7650690820195578462_n.jpg?_nc_cat=105&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=Dz3Ed4146vsAX_g8_5-&amp;_nc_ht=scontent-dfw5-1.cdninstagram.com&amp;oh=478587fd90c071cf41a7f6b6c0d6ade8&amp;oe=60A98EF6&quot;}">
+<img src="../../wp-content/plugins/instagram-feed-pro/img/placeholder.png" alt="#vamtamthemefitness2">
+</a>
+</div>
+<div class="sbi_info">
+</div>
+</div><div class="sbi_item sbi_type_image sbi_new sbi_transition" id="sbi_18148068577085642" data-date="1617263070" data-numcomments="0">
+<div class="sbi_photo_wrap">
+<div class="sbi_link sbi_disable_lightbox">
+<div class="sbi_hover_top">
+<p class="sbi_username">
+<a href="https://www.instagram.com//" target="_blank" rel="nofollow noopener" style="color: rgba(255,255,255,1)"></a>
+</p>
+</div>
+<a class="sbi_instagram_link" href="https://www.instagram.com/p/CNHYvnnFaWt/" target="_blank" rel="nofollow noopener" title="Instagram" style="color: rgba(255,255,255,1)">
+<span class="sbi-screenreader">View</span>
+<svg class="svg-inline--fa fa-instagram fa-w-14" aria-hidden="true" data-fa-processed="" aria-label="Instagram" data-prefix="fab" data-icon="instagram" role="img" viewBox="0 0 448 512">
+<path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+</svg> </a>
+<div class="sbi_hover_bottom" style="color: rgba(255,255,255,1)">
+<p>
+<span class="sbi_date">
+<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="far" data-icon="clock" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg> Apr 1</span>
+</p>
+</div>
+<a class="sbi_link_area nofancybox" href="../../../scontent-dfw5-2.cdninstagram.com/v/t51.29350-15/166676335_195566115407789_5796107168525110478_ndf38.jpg?_nc_cat=107&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=begLLaKBC8cAX_J8lhh&amp;_nc_ht=scontent-dfw5-2.cdninstagram.com&amp;oh=334aa1fbbbfa5ab0ff6b64e31439c3f8&amp;oe=60A9FE6B" rel="nofollow noopener" data-lightbox-sbi="" data-title="#vamtamthemefitness2" data-video="" data-carousel="" data-id="sbi_18148068577085642" data-user="" data-url="https://www.instagram.com/p/CNHYvnnFaWt/" data-avatar="" data-account-type="business">
+<span class="sbi-screenreader">Open</span>
+</a>
+</div>
+<a class="sbi_photo" href="https://www.instagram.com/p/CNHYvnnFaWt/" target="_blank" rel="nofollow noopener" data-full-res="https://scontent-dfw5-2.cdninstagram.com/v/t51.29350-15/166676335_195566115407789_5796107168525110478_n.jpg?_nc_cat=107&#038;ccb=1-3&#038;_nc_sid=8ae9d6&#038;_nc_ohc=begLLaKBC8cAX_J8lhh&#038;_nc_ht=scontent-dfw5-2.cdninstagram.com&#038;oh=334aa1fbbbfa5ab0ff6b64e31439c3f8&#038;oe=60A9FE6B" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-dfw5-2.cdninstagram.com\/v\/t51.29350-15\/166676335_195566115407789_5796107168525110478_n.jpg?_nc_cat=107&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=begLLaKBC8cAX_J8lhh&amp;_nc_ht=scontent-dfw5-2.cdninstagram.com&amp;oh=334aa1fbbbfa5ab0ff6b64e31439c3f8&amp;oe=60A9FE6B&quot;,&quot;150&quot;:&quot;https:\/\/scontent-dfw5-2.cdninstagram.com\/v\/t51.29350-15\/166676335_195566115407789_5796107168525110478_n.jpg?_nc_cat=107&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=begLLaKBC8cAX_J8lhh&amp;_nc_ht=scontent-dfw5-2.cdninstagram.com&amp;oh=334aa1fbbbfa5ab0ff6b64e31439c3f8&amp;oe=60A9FE6B&quot;,&quot;320&quot;:&quot;https:\/\/scontent-dfw5-2.cdninstagram.com\/v\/t51.29350-15\/166676335_195566115407789_5796107168525110478_n.jpg?_nc_cat=107&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=begLLaKBC8cAX_J8lhh&amp;_nc_ht=scontent-dfw5-2.cdninstagram.com&amp;oh=334aa1fbbbfa5ab0ff6b64e31439c3f8&amp;oe=60A9FE6B&quot;,&quot;640&quot;:&quot;https:\/\/scontent-dfw5-2.cdninstagram.com\/v\/t51.29350-15\/166676335_195566115407789_5796107168525110478_n.jpg?_nc_cat=107&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=begLLaKBC8cAX_J8lhh&amp;_nc_ht=scontent-dfw5-2.cdninstagram.com&amp;oh=334aa1fbbbfa5ab0ff6b64e31439c3f8&amp;oe=60A9FE6B&quot;}">
+<img src="../../wp-content/plugins/instagram-feed-pro/img/placeholder.png" alt="#vamtamthemefitness2">
+</a>
+</div>
+<div class="sbi_info">
+</div>
+</div><div class="sbi_item sbi_type_image sbi_new sbi_transition" id="sbi_17950614409436770" data-date="1617263019" data-numcomments="0">
+<div class="sbi_photo_wrap">
+<div class="sbi_link sbi_disable_lightbox">
+<div class="sbi_hover_top">
+<p class="sbi_username">
+<a href="https://www.instagram.com//" target="_blank" rel="nofollow noopener" style="color: rgba(255,255,255,1)"></a>
+</p>
+</div>
+<a class="sbi_instagram_link" href="https://www.instagram.com/p/CNHYpeLlDdO/" target="_blank" rel="nofollow noopener" title="Instagram" style="color: rgba(255,255,255,1)">
+<span class="sbi-screenreader">View</span>
+<svg class="svg-inline--fa fa-instagram fa-w-14" aria-hidden="true" data-fa-processed="" aria-label="Instagram" data-prefix="fab" data-icon="instagram" role="img" viewBox="0 0 448 512">
+<path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+</svg> </a>
+<div class="sbi_hover_bottom" style="color: rgba(255,255,255,1)">
+<p>
+<span class="sbi_date">
+<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="far" data-icon="clock" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg> Apr 1</span>
+</p>
+</div>
+<a class="sbi_link_area nofancybox" href="../../../scontent-dfw5-2.cdninstagram.com/v/t51.29350-15/167145122_1351648528547199_1852287889714800547_nb733.jpg?_nc_cat=108&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=9T0ZHQkABvcAX9GWyVm&amp;_nc_ht=scontent-dfw5-2.cdninstagram.com&amp;oh=87c4349175ff5e5568437d3b1331f04e&amp;oe=60AA00AC" rel="nofollow noopener" data-lightbox-sbi="" data-title="#vamtamthemefitness2" data-video="" data-carousel="" data-id="sbi_17950614409436770" data-user="" data-url="https://www.instagram.com/p/CNHYpeLlDdO/" data-avatar="" data-account-type="business">
+<span class="sbi-screenreader">Open</span>
+</a>
+</div>
+<a class="sbi_photo" href="https://www.instagram.com/p/CNHYpeLlDdO/" target="_blank" rel="nofollow noopener" data-full-res="https://scontent-dfw5-2.cdninstagram.com/v/t51.29350-15/167145122_1351648528547199_1852287889714800547_n.jpg?_nc_cat=108&#038;ccb=1-3&#038;_nc_sid=8ae9d6&#038;_nc_ohc=9T0ZHQkABvcAX9GWyVm&#038;_nc_ht=scontent-dfw5-2.cdninstagram.com&#038;oh=87c4349175ff5e5568437d3b1331f04e&#038;oe=60AA00AC" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-dfw5-2.cdninstagram.com\/v\/t51.29350-15\/167145122_1351648528547199_1852287889714800547_n.jpg?_nc_cat=108&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=9T0ZHQkABvcAX9GWyVm&amp;_nc_ht=scontent-dfw5-2.cdninstagram.com&amp;oh=87c4349175ff5e5568437d3b1331f04e&amp;oe=60AA00AC&quot;,&quot;150&quot;:&quot;https:\/\/scontent-dfw5-2.cdninstagram.com\/v\/t51.29350-15\/167145122_1351648528547199_1852287889714800547_n.jpg?_nc_cat=108&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=9T0ZHQkABvcAX9GWyVm&amp;_nc_ht=scontent-dfw5-2.cdninstagram.com&amp;oh=87c4349175ff5e5568437d3b1331f04e&amp;oe=60AA00AC&quot;,&quot;320&quot;:&quot;https:\/\/scontent-dfw5-2.cdninstagram.com\/v\/t51.29350-15\/167145122_1351648528547199_1852287889714800547_n.jpg?_nc_cat=108&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=9T0ZHQkABvcAX9GWyVm&amp;_nc_ht=scontent-dfw5-2.cdninstagram.com&amp;oh=87c4349175ff5e5568437d3b1331f04e&amp;oe=60AA00AC&quot;,&quot;640&quot;:&quot;https:\/\/scontent-dfw5-2.cdninstagram.com\/v\/t51.29350-15\/167145122_1351648528547199_1852287889714800547_n.jpg?_nc_cat=108&amp;ccb=1-3&amp;_nc_sid=8ae9d6&amp;_nc_ohc=9T0ZHQkABvcAX9GWyVm&amp;_nc_ht=scontent-dfw5-2.cdninstagram.com&amp;oh=87c4349175ff5e5568437d3b1331f04e&amp;oe=60AA00AC&quot;}">
+<img src="../../wp-content/plugins/instagram-feed-pro/img/placeholder.png" alt="#vamtamthemefitness2">
+</a>
+</div>
+<div class="sbi_info">
+</div>
+</div> </div>
+<div id="sbi_load">
+</div>
+<span class="sbi_resized_image_data" data-feed-id="sbi_+VAMTAMTHEMEFITNESS2#8" data-resized="{&quot;17883965111061600&quot;:{&quot;id&quot;:&quot;149780051_172497447742275_3454407433146678916_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;17936336404448511&quot;:{&quot;id&quot;:&quot;150259960_768315154083827_7650690820195578462_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;17905198255707978&quot;:{&quot;id&quot;:&quot;149831343_1830194480492346_1323700148335757677_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;17887237145007709&quot;:{&quot;id&quot;:&quot;149783819_1322285844823851_787730271173955498_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;18120910309175330&quot;:{&quot;id&quot;:&quot;150116413_707961803215781_6620700934581791279_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;17933631874476225&quot;:{&quot;id&quot;:&quot;149384987_842939259595869_3643698726766741840_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;17950614409436770&quot;:{&quot;id&quot;:&quot;167145122_1351648528547199_1852287889714800547_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;18148068577085642&quot;:{&quot;id&quot;:&quot;166676335_195566115407789_5796107168525110478_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}}}">
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-wrapper" style="">
+<footer id="main-footer" class="main-footer">
+<div data-elementor-type="footer" data-elementor-id="284" class="elementor elementor-284 elementor-location-footer" data-elementor-settings="[]">
+<div class="elementor-section-wrap">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-1ec5056 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1ec5056" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-0387d0d" data-id="0387d0d" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-f1b9b1d elementor-widget__width-auto elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="f1b9b1d" data-element_type="widget" data-settings="{&quot;_animation_tablet&quot;:&quot;none&quot;,&quot;_animation_mobile&quot;:&quot;none&quot;}" data-widget_type="theme-site-logo.default">
+<div class="elementor-widget-container">
+<a href="../../index.html">
+<img src="../../wp-content/uploads/2020/12/logo.svg" class="attachment-full size-full" alt="" height="33" width="58" /> </a>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-67e0152" data-id="67e0152" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-2bea3b7 elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="2bea3b7" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p>450 NW Couch Street, Portland, Oregon 97209</p> </div>
+</div>
+<div class="elementor-element elementor-element-0c97ba4 elementor-widget__width-auto vamtam-has-theme-style elementor-widget elementor-widget-button" data-id="0c97ba4" data-element_type="widget" data-widget_type="button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a href="tel:123-1800-567-8990" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-text">+ (123) 1800-567-8990</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-ef26c14" data-id="ef26c14" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-252c85c elementor-widget elementor-widget-text-editor" data-id="252c85c" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p>Every day: 9:00 &#8211; 22:00<br />Sat &#8211; Sun: 8:00 &#8211; 21:00</p> </div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-379d07f" data-id="379d07f" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-8abecb3 e-grid-align-right e-grid-align-left elementor-grid-3 elementor-shape-rounded elementor-widget elementor-widget-social-icons" data-id="8abecb3" data-element_type="widget" data-settings="{&quot;_animation_tablet&quot;:&quot;none&quot;,&quot;_animation_mobile&quot;:&quot;none&quot;}" data-widget_type="social-icons.default">
+<div class="elementor-widget-container">
+<div class="elementor-social-icons-wrapper elementor-grid">
+<div class="elementor-grid-item">
+<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-4a07e89" href="https://www.facebook.com/Equinox" target="_blank">
+<span class="elementor-screen-only">Facebook</span>
+<i class="fab fa-facebook"></i> </a>
+</div>
+<div class="elementor-grid-item">
+<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-466ddbe" href="https://www.instagram.com/equinox/" target="_blank">
+<span class="elementor-screen-only">Instagram</span>
+<i class="fab fa-instagram"></i> </a>
+</div>
+<div class="elementor-grid-item">
+<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-d1cde1b" href="https://www.youtube.com/channel/UCnY3kkkuVmN2F-rUoiaAP2A" target="_blank">
+<span class="elementor-screen-only">Youtube</span>
+<i class="fab fa-youtube"></i> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-3f70084 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3f70084" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1ab26a3" data-id="1ab26a3" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-91cdcb6 elementor-mobile-button-align-stretch elementor-button-align-stretch vamtam-has-theme-form-style elementor-widget elementor-widget-form" data-id="91cdcb6" data-element_type="widget" data-settings="{&quot;button_width&quot;:&quot;20&quot;,&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width_mobile&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
+<div class="elementor-widget-container">
+<form class="elementor-form" method="post" name="New Form">
+<input type="hidden" name="post_id" value="284" />
+<input type="hidden" name="form_id" value="91cdcb6" />
+<input type="hidden" name="referer_title" value="Product categories  New" />
+<div class="elementor-form-fields-wrapper elementor-labels-above">
+<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-name elementor-col-80 elementor-sm-100 elementor-field-required">
+<input size="1" type="email" name="form_fields[name]" id="form-field-name" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Enter your email to get curated content from our trainers and nutrition experts to keep you feeling good…" required="required" aria-required="true"> </div>
+<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-20 e-form__buttons elementor-sm-100">
+<button type="submit" class="elementor-button elementor-size-md">
+<span>
+<span class=" elementor-button-icon">
+</span>
+<span class="elementor-button-text">Sign Up</span>
+</span>
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-8bad43c elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8bad43c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a4c24ef" data-id="a4c24ef" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-ff7b5a6 elementor-nav-menu__align-left elementor-nav-menu--dropdown-none elementor-widget__width-auto elementor-nav-menu--indicator-classic vamtam-has-mobile-disable-scroll elementor-widget elementor-widget-nav-menu" data-id="ff7b5a6" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;horizontal&quot;}" data-widget_type="nav-menu.default">
+<div class="elementor-widget-container">
+<nav role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade"><ul id="menu-1-ff7b5a6" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3076"><a href="../../classes/index.html" class="elementor-item">Classes</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3077"><a href="../../personal-training/index.html" class="elementor-item">Personal Training</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3079"><a href="../../about/index.html" class="elementor-item">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11740"><a href="../../blog.html" class="elementor-item">Community</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14943"><a href="../../shop-2/index.html" class="elementor-item">Shop</a></li>
+</ul></nav>
+<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+<i class="eicon-menu-bar" aria-hidden="true"></i>
+<span class="elementor-screen-only">Menu</span>
+</div>
+<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true"><ul id="menu-2-ff7b5a6" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3076"><a href="../../classes/index.html" class="elementor-item">Classes</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3077"><a href="../../personal-training/index.html" class="elementor-item">Personal Training</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3079"><a href="../../about/index.html" class="elementor-item">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11740"><a href="../../blog.html" class="elementor-item">Community</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14943"><a href="../../shop-2/index.html" class="elementor-item">Shop</a></li>
+</ul></nav>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-486a06c" data-id="486a06c" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-10fca0a elementor-widget__width-auto elementor-widget elementor-widget-text-editor" data-id="10fca0a" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+Copyright © 2021 Fitness <a href="http://www.vamtam.com/">Vamtam Themes</a> </div>
+</div>
+<div class="elementor-element elementor-element-356b8a2 elementor-nav-menu__align-left elementor-nav-menu--dropdown-none elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-nav-menu--indicator-classic vamtam-has-mobile-disable-scroll elementor-widget elementor-widget-nav-menu" data-id="356b8a2" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;horizontal&quot;}" data-widget_type="nav-menu.default">
+<div class="elementor-widget-container">
+<nav role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade"><ul id="menu-1-356b8a2" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-1150"><a href="../../privacy-policy/index.html" class="elementor-item">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1154"><a href="../../terms-conditions/index.html" class="elementor-item">Terms &#038; Conditions</a></li>
+</ul></nav>
+<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+<i class="eicon-menu-bar" aria-hidden="true"></i>
+<span class="elementor-screen-only">Menu</span>
+</div>
+<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true"><ul id="menu-2-356b8a2" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-1150"><a href="../../privacy-policy/index.html" class="elementor-item">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1154"><a href="../../terms-conditions/index.html" class="elementor-item">Terms &#038; Conditions</a></li>
+</ul></nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<div id="scroll-to-top" class="vamtam-scroll-to-top icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M15.098 8.344L.678 21.164C.081 21.694 0 22.645.5 23.279c.499.638 1.385.725 1.983.193l13.518-12.018 13.516 12.02c.6.53 1.486.445 1.985-.193s.419-1.585-.178-2.115L16.906 8.345c-.263-.234-.584-.351-.905-.351s-.641.118-.902.35z" /></svg></div>
+
+<script type="text/javascript">
+var sbiajaxurl = "../../wp-admin/admin-ajax.html";
+
+</script>
+<div data-elementor-type="popup" data-elementor-id="5328" class="elementor elementor-5328 elementor-location-popup" data-elementor-settings="{&quot;prevent_scroll&quot;:&quot;yes&quot;,&quot;entrance_animation&quot;:&quot;slideInDown&quot;,&quot;exit_animation&quot;:&quot;slideInDown&quot;,&quot;entrance_animation_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.6,&quot;sizes&quot;:[]},&quot;prevent_close_on_background_click&quot;:&quot;yes&quot;,&quot;timing&quot;:[]}">
+<div class="elementor-section-wrap">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-8374b4b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8374b4b" data-element_type="section">
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e79fa7c" data-id="e79fa7c" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-0833310 elementor-widget elementor-widget-heading" data-id="0833310" data-element_type="widget" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h1 class="elementor-heading-title elementor-size-default">FREE pass</h1> </div>
+</div>
+<div class="elementor-element elementor-element-d0af0be elementor-widget elementor-widget-heading" data-id="d0af0be" data-element_type="widget" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Thanks for your interest in F7. Simply fill out this form and a member of our team will contact you shortly to schedule your Day Pass.</span> </div>
+</div>
+<div class="elementor-element elementor-element-0d3141c elementor-button-align-stretch vamtam-has-theme-form-style elementor-widget elementor-widget-form" data-id="0d3141c" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Continie &quot;,&quot;step_previous_label&quot;:&quot;Back&quot;,&quot;step_type&quot;:&quot;number&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
+<div class="elementor-widget-container">
+<form class="elementor-form" method="post" name="New Form">
+<input type="hidden" name="post_id" value="5328" />
+<input type="hidden" name="form_id" value="0d3141c" />
+<input type="hidden" name="referer_title" value="Product categories  New" />
+<div class="elementor-form-fields-wrapper elementor-labels-above">
+<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_6925b28 elementor-col-100 elementor-field-required">
+<input size="1" type="text" name="form_fields[field_6925b28]" id="form-field-field_6925b28" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Name" required="required" aria-required="true"> </div>
+<div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-field_10db230 elementor-col-50">
+<div class="elementor-field elementor-select-wrapper ">
+<select name="form_fields[field_10db230]" id="form-field-field_10db230" class="elementor-field-textual elementor-size-md">
+<option value="Gender">Gender</option><option value="Male">Male</option><option value="Female">Female</option><option value="Other">Other</option> </select>
+</div>
+</div>
+<div class="elementor-field-type-date elementor-field-group elementor-column elementor-field-group-field_ef23b73 elementor-col-50">
+<input type="date" name="form_fields[field_ef23b73]" id="form-field-field_ef23b73" class="elementor-field elementor-size-md  elementor-field-textual elementor-date-field" placeholder="Date of birth" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"> </div>
+<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_36198f8 elementor-col-50">
+<input size="1" type="text" name="form_fields[field_36198f8]" id="form-field-field_36198f8" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Location"> </div>
+<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_0b2a4b5 elementor-col-50">
+<input size="1" type="text" name="form_fields[field_0b2a4b5]" id="form-field-field_0b2a4b5" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Zip Code"> </div>
+<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-field_53e258b elementor-col-50 elementor-field-required">
+<input size="1" type="email" name="form_fields[field_53e258b]" id="form-field-field_53e258b" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Email" required="required" aria-required="true"> </div>
+<div class="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-field_c3c3899 elementor-col-50 elementor-field-required">
+<input size="1" type="tel" name="form_fields[field_c3c3899]" id="form-field-field_c3c3899" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Phone" required="required" aria-required="true" pattern="[0-9()#&amp;+*-=.]+" title="Only numbers and phone characters (#, -, *, etc) are accepted."> </div>
+<div class="elementor-field-type-acceptance elementor-field-group elementor-column elementor-field-group-field_c2e9b3a elementor-col-100 elementor-field-required">
+<div class="elementor-field-subgroup"><span class="elementor-field-option"><input type="checkbox" name="form_fields[field_c2e9b3a]" id="form-field-field_c2e9b3a" class="elementor-field elementor-size-md  elementor-acceptance-field" required="required" aria-required="true"> <label for="form-field-field_c2e9b3a">I agree to the terms and conditions of storage of my personal data.</label></span></div> </div>
+<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+<button type="submit" class="elementor-button elementor-size-sm">
+<span>
+<span class="elementor-align-icon-left elementor-button-icon">
+<i aria-hidden="true" class="vamtamtheme- vamtam-theme-arrow-right"></i> </span>
+<span class="elementor-button-text">Submit</span>
+</span>
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<div data-elementor-type="popup" data-elementor-id="3237" class="elementor elementor-3237 elementor-location-popup" data-elementor-settings="{&quot;entrance_animation&quot;:&quot;fadeIn&quot;,&quot;exit_animation&quot;:&quot;fadeIn&quot;,&quot;entrance_animation_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.3,&quot;sizes&quot;:[]},&quot;open_selector&quot;:&quot;.mega-menu&quot;,&quot;triggers&quot;:[],&quot;timing&quot;:[]}">
+<div class="elementor-section-wrap">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-887b4f9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="887b4f9" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-8ee874e" data-id="8ee874e" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-3de4cae vamtam-elementor-cta-align-left elementor-cta--skin-cover elementor-animated-content elementor-widget elementor-widget-call-to-action" data-id="3de4cae" data-element_type="widget" data-widget_type="call-to-action.default">
+<div class="elementor-widget-container">
+<a href="../../outdoor-classes/index.html" class="elementor-cta">
+<div class="elementor-cta__bg-wrapper">
+<div class="elementor-cta__bg elementor-bg" style="background-image: url();"></div>
+<div class="elementor-cta__bg-overlay"></div>
+</div>
+<div class="elementor-cta__content">
+<div class="elementor-content-item elementor-cta__content-item elementor-icon-wrapper elementor-cta__icon elementor-view-default elementor-animated-item--grow">
+<div class="elementor-icon">
+<i aria-hidden="true" class="vamtamtheme- vamtam-theme-arrow-right"></i> </div>
+</div>
+<span class="elementor-cta__title elementor-cta__content-item elementor-content-item elementor-animated-item--grow">
+Outdoor Classes </span>
+<div class="elementor-cta__description elementor-cta__content-item elementor-content-item elementor-animated-item--grow">
+Fresh air and sun are some of the best endorphin-boosters! </div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-b70c676" data-id="b70c676" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-aea0a84 vamtam-elementor-cta-align-left elementor-cta--skin-cover elementor-animated-content elementor-widget elementor-widget-call-to-action" data-id="aea0a84" data-element_type="widget" data-widget_type="call-to-action.default">
+<div class="elementor-widget-container">
+<a href="../../group-training/index.html" class="elementor-cta">
+<div class="elementor-cta__bg-wrapper">
+<div class="elementor-cta__bg elementor-bg" style="background-image: url();"></div>
+<div class="elementor-cta__bg-overlay"></div>
+</div>
+<div class="elementor-cta__content">
+<div class="elementor-content-item elementor-cta__content-item elementor-icon-wrapper elementor-cta__icon elementor-view-default elementor-animated-item--grow">
+<div class="elementor-icon">
+<i aria-hidden="true" class="vamtamtheme- vamtam-theme-arrow-right"></i> </div>
+</div>
+<span class="elementor-cta__title elementor-cta__content-item elementor-content-item elementor-animated-item--grow">
+Group Training </span>
+<div class="elementor-cta__description elementor-cta__content-item elementor-content-item elementor-animated-item--grow">
+Group fitness is a great way to help motivate yourself. </div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-9c5d374" data-id="9c5d374" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-8ceecfa vamtam-elementor-cta-align-left elementor-cta--skin-cover elementor-animated-content elementor-widget elementor-widget-call-to-action" data-id="8ceecfa" data-element_type="widget" data-widget_type="call-to-action.default">
+<div class="elementor-widget-container">
+<a href="../../digital-coaching/index.html" class="elementor-cta">
+<div class="elementor-cta__bg-wrapper">
+<div class="elementor-cta__bg elementor-bg" style="background-image: url();"></div>
+<div class="elementor-cta__bg-overlay"></div>
+</div>
+<div class="elementor-cta__content">
+<div class="elementor-content-item elementor-cta__content-item elementor-icon-wrapper elementor-cta__icon elementor-view-default elementor-animated-item--grow">
+<div class="elementor-icon">
+<i aria-hidden="true" class="vamtamtheme- vamtam-theme-arrow-right"></i> </div>
+</div>
+<span class="elementor-cta__title elementor-cta__content-item elementor-content-item elementor-animated-item--grow">
+Digital Coaching </span>
+<div class="elementor-cta__description elementor-cta__content-item elementor-content-item elementor-animated-item--grow">
+At-home or on-the-go, practice wherever and whenever you want. </div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-c0fb6dd" data-id="c0fb6dd" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-5439557 vamtam-elementor-cta-align-left elementor-cta--skin-cover elementor-animated-content elementor-widget elementor-widget-call-to-action" data-id="5439557" data-element_type="widget" data-widget_type="call-to-action.default">
+<div class="elementor-widget-container">
+<a href="../../personal-training.html" class="elementor-cta">
+<div class="elementor-cta__bg-wrapper">
+<div class="elementor-cta__bg elementor-bg" style="background-image: url();"></div>
+<div class="elementor-cta__bg-overlay"></div>
+</div>
+<div class="elementor-cta__content">
+<div class="elementor-content-item elementor-cta__content-item elementor-icon-wrapper elementor-cta__icon elementor-view-default elementor-animated-item--grow">
+<div class="elementor-icon">
+<i aria-hidden="true" class="vamtamtheme- vamtam-theme-arrow-right"></i> </div>
+</div>
+<span class="elementor-cta__title elementor-cta__content-item elementor-content-item elementor-animated-item--grow">
+Personal Training </span>
+<div class="elementor-cta__description elementor-cta__content-item elementor-content-item elementor-animated-item--grow">
+Personal Training at F7 is all about you. </div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-7e242c8 elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default" data-id="7e242c8" data-element_type="section">
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d2d2617" data-id="d2d2617" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-a3f1381 elementor-align-justify elementor-widget elementor-widget-button" data-id="a3f1381" data-element_type="widget" data-widget_type="button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a href="../../classes.html" class="elementor-button-link elementor-button elementor-size-sm elementor-animation-grow" role="button">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-text">View all classes</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<div data-elementor-type="popup" data-elementor-id="5519" class="elementor elementor-5519 elementor-location-popup" data-elementor-settings="{&quot;entrance_animation&quot;:&quot;fadeIn&quot;,&quot;exit_animation&quot;:&quot;fadeIn&quot;,&quot;entrance_animation_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:2,&quot;sizes&quot;:[]},&quot;prevent_scroll&quot;:&quot;yes&quot;,&quot;avoid_multiple_popups&quot;:&quot;yes&quot;,&quot;timing&quot;:[]}">
+<div class="elementor-section-wrap">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-5a082ef elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5a082ef" data-element_type="section">
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-300a7fe" data-id="300a7fe" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-71d3f6a elementor-view-default elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="71d3f6a" data-element_type="widget" data-widget_type="icon-box.default">
+<div class="elementor-widget-container">
+<div class="elementor-icon-box-wrapper">
+<div class="elementor-icon-box-icon">
+<span class="elementor-icon elementor-animation-">
+<i aria-hidden="true" class="vamtamtheme- vamtam-theme-runner"></i> </span>
+</div>
+<div class="elementor-icon-box-content">
+<h1 class="elementor-icon-box-title">
+<span>thank you!</span>
+</h1>
+<p class="elementor-icon-box-description">Your submission was received and we will contact you soon</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+<link rel='stylesheet' id='elementor-post-5328-css' href='../../wp-content/uploads/elementor/css/post-5328a14e.css?ver=1619108388' type='text/css' media='all' />
+<link rel='stylesheet' id='flatpickr-css' href='../../wp-content/plugins/elementor/assets/lib/flatpickr/flatpickr.mineda1.css?ver=4.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-5519-css' href='../../wp-content/uploads/elementor/css/post-5519a14e.css?ver=1619108388' type='text/css' media='all' />
+<script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min44fd.js?ver=2.70' id='jquery-blockui-js'></script>
+<script type='text/javascript' id='wc-add-to-cart-js-extra'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/f7.vamtam.com\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.minbb49.js?ver=5.2.2' id='wc-add-to-cart-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min6b25.js?ver=2.1.4' id='js-cookie-js'></script>
+<script type='text/javascript' id='woocommerce-js-extra'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.minbb49.js?ver=5.2.2' id='woocommerce-js'></script>
+<script type='text/javascript' id='vamtam-all-js-extra'>
+/* <![CDATA[ */
+var VAMTAM_FRONT = {"ajaxurl":"https:\/\/f7.vamtam.com\/wp-admin\/admin-ajax.php","jspath":"https:\/\/f7.vamtam.com\/wp-content\/themes\/f7\/vamtam\/assets\/js\/","max_breakpoint":"1025","beaver_responsive":"1025","beaver_small":"768","content_width":"1260"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/themes/f7/vamtam/assets/js/all.min32a9.js?ver=1616271023' id='vamtam-all-js'></script>
+<script type='text/javascript' id='wc-cart-fragments-js-extra'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_377dcd0063d3a41629785d92093825c5","fragment_name":"wc_fragments_377dcd0063d3a41629785d92093825c5","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.minbb49.js?ver=5.2.2' id='wc-cart-fragments-js'></script>
+<script type='text/javascript' id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/vamtam-export-api\/|\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/checkout\/|\/cart\/|\/my-account\/|\/wc-api\/v(.*)|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/f7.vamtam.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("../../index.html")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("../../index.html")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.minf269.js?ver=1.0.1' id='smartmenus-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/elementor/assets/js/webpack.runtime.mindeae.js?ver=3.2.1' id='elementor-webpack-runtime-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/elementor/assets/js/frontend-modules.mindeae.js?ver=3.2.1' id='elementor-frontend-modules-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script type='text/javascript' src='../../wp-includes/js/jquery/ui/core.min35d0.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script type='text/javascript' id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1365,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1620,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"direction":"min","is_enabled":false}}},"version":"3.2.1","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"a11y_improvements":true,"form-submissions":true},"urls":{"assets":"https:\/\/f7.vamtam.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":0,"title":"New &#8211; Fitness","excerpt":""}};
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/elementor/assets/js/frontend.mindeae.js?ver=3.2.1' id='elementor-frontend-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/vamtam-elementor-integration/assets/js/widgets/nav-menu/vamtam-nav-menu.mincb18.js?ver=1.0.9' id='vamtam-nav-menu-js'></script>
+<script type='text/javascript' id='sbi_scripts-js-extra'>
+/* <![CDATA[ */
+var sb_instagram_js_options = {"font_method":"svg","resized_url":"https:\/\/f7.vamtam.com\/wp-content\/uploads\/sb-instagram-feed-images\/","placeholder":"https:\/\/f7.vamtam.com\/wp-content\/plugins\/instagram-feed-pro\/img\/placeholder.png","br_adjust":""};
+var sbiTranslations = {"share":"Share"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/instagram-feed-pro/js/sbi-scripts.min8040.js?ver=5.12' id='sbi_scripts-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/vamtam-elementor-integration/assets/js/widgets/text-editor/vamtam-text-editor.mincb18.js?ver=1.0.9' id='vamtam-text-editor-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/elementor/assets/lib/flatpickr/flatpickr.mineda1.js?ver=4.1.4' id='flatpickr-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.mindeae.js?ver=3.2.1' id='elementor-pro-webpack-runtime-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.mindeae.js?ver=3.2.1' id='elementor-sticky-js'></script>
+<script type='text/javascript' id='elementor-pro-frontend-js-before'>
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/f7.vamtam.com\/wp-admin\/admin-ajax.php","nonce":"a4aed63fca","urls":{"assets":"https:\/\/f7.vamtam.com\/wp-content\/plugins\/elementor-pro\/assets\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"menu_cart":{"cart_page_url":"https:\/\/f7.vamtam.com\/cart\/","checkout_page_url":"https:\/\/f7.vamtam.com\/checkout\/"},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/f7.vamtam.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/elementor-pro/assets/js/frontend.mindeae.js?ver=3.2.1' id='elementor-pro-frontend-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/elementor-pro/assets/js/elements-handlers.mindeae.js?ver=3.2.1' id='pro-elements-handlers-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/vamtam-elementor-integration/assets/js/vamtam-elementor-frontend.mincb18.js?ver=1.0.9' id='vamtam-elementor-frontend-js'></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"9700abca30","applicationID":"9339867","transactionName":"YFUHbUVUDBZZAkZZXFkfJFpDXA0LFwlXUVdSQkhfWFoWAEo=","queueTime":0,"applicationTime":1384,"atts":"TBIEGw1OHxg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from f7.vamtam.com/product-category/new/?add-to-cart=6224 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 25 Apr 2021 13:14:33 GMT -->
+</html>

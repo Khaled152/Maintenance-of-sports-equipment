@@ -1,0 +1,8 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.vamtam.com	TRUE	/	FALSE	1999999999	__cfduid	d58d54496ea8a6a8237db11064c96ba961619355343
+f7.vamtam.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+f7.vamtam.com	TRUE	/	FALSE	1999999999	woocommerce_items_in_cart	1
+f7.vamtam.com	TRUE	/	FALSE	1999999999	wp_woocommerce_session_df20e29ee13d6d4d55cac00715f5add8	6b666caf78c640fef80ee7c18c59c313%7C%7C1619528241%7C%7C1619524641%7C%7C39dd6334db3ad5eb384334ebddb27f07
+f7.vamtam.com	TRUE	/	FALSE	1999999999	woocommerce_cart_hash	149d6433a40eb816052dc2a2293263cd
+
