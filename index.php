@@ -7,7 +7,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"9700abca30",applicationID:"9339867"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(7),c=e(8),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(9);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e){return!(!e||!e.protocol||"file:"===e.protocol)}t.exports=r},{}],4:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(6),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],5:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],6:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],7:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],8:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],9:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(7),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=x.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+x.offset],null,"api"),c("timing",["load",n]);var r=l.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+x.offset],null,"api")}var a=e(2),c=e("handle"),f=e(7),u=e("ee"),s=e(5),d=e(3),p=window,l=p.document,m="addEventListener",v="attachEvent",g=p.XMLHttpRequest,w=g&&g.prototype;if(d(p.location)){NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:g,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1208.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:b,userAgent:s};e(1),e(4),l[m]?(l[m]("DOMContentLoaded",o,!1),p[m]("load",r,!1)):(l[v]("onreadystatechange",i),p[v]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0}},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(8),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="">
-<title>Home | المستشار للصيانه</title>
+<title>Home | المستشار الهندسي للصيانه</title>
+<style>
+	body{
+		width: 100%;
+	}
+</style>
 <style id="vamtam-theme-options">:root {--vamtam-default-bg-color:#fff;
 --vamtam-default-line-color:rgba( var( --vamtam-accent-color-7-rgb ), 1 );
 --vamtam-small-padding:20px;
@@ -141,6 +146,7 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 <link rel='stylesheet' id='sbi_styles-css' href='wp-content/plugins/instagram-feed-pro/css/sbi-styles.min8040.css?ver=5.12' type='text/css' media='all' />
 <link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.mina78f.css?ver=5.7.1' type='text/css' media='all' />
 <link data-minify="1" rel='stylesheet' id='wc-block-vendors-style-css' href='wp-content/cache/min/1/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/vendors-style83f9.css?ver=1619108455' type='text/css' media='all' />
@@ -274,6 +280,12 @@ img.emoji {
       padding-right: 0px;
   }
 }
+
+
+		</style>
+		<style>
+
+
 		</style>
 <noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
 <body class="home page-template-default page page-id-11 wp-custom-logo wp-embed-responsive theme-f7 woocommerce-no-js full header-layout-logo-menu has-page-header no-middle-header responsive-layout vamtam-is-elementor elementor-active elementor-pro-active layout-full elementor-default elementor-kit-4 elementor-page elementor-page-11">
@@ -640,7 +652,7 @@ img.emoji {
 </section>
 
 
-<section class="elementor-section elementor-top-section elementor-element elementor-element-c00feac elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="c00feac" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_tablet&quot;:&quot;none&quot;,&quot;animation_mobile&quot;:&quot;none&quot;,&quot;animation_delay&quot;:500}">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-c00feac elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" style="margin-bottom: 10px;" data-id="c00feac" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_tablet&quot;:&quot;none&quot;,&quot;animation_mobile&quot;:&quot;none&quot;,&quot;animation_delay&quot;:500}">
 <div class="elementor-container elementor-column-gap-no">
 <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a05d1db elementor-hidden-phone elementor-hidden-tablet" data-id="a05d1db" data-element_type="column">
 <div class="elementor-widget-wrap">
@@ -653,6 +665,9 @@ img.emoji {
 </div>
 </div>
 </section>
+<br>
+<br>
+<br>
 <section class="elementor-section elementor-top-section elementor-element elementor-element-8b3bd42 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8b3bd42" data-element_type="section" id="join" data-settings="{&quot;shape_divider_bottom_negative&quot;:&quot;yes&quot;,&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_bottom&quot;:&quot;triangle-asymmetrical&quot;}">
 <div class="elementor-shape elementor-shape-bottom" data-negative="true">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
@@ -676,57 +691,89 @@ img.emoji {
 </div>
 </div>
 </div>
-<div class="elementor-element elementor-element-3f0afa4 elementor-button-align-end vamtam-has-theme-form-style elementor-widget elementor-widget-form" data-id="3f0afa4" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Continie &quot;,&quot;step_previous_label&quot;:&quot;Back&quot;,&quot;step_type&quot;:&quot;number&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
-<div class="elementor-widget-container">
 
 
-<section class="elementor-section elementor-top-section elementor-element elementor-element-912e329 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="912e329" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-	<div class="elementor-container elementor-column-gap-default">
-	<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6c265c4" data-id="6c265c4" data-element_type="column">
-	<div class="elementor-widget-wrap elementor-element-populated">
-	<div class="elementor-element elementor-element-345095c elementor-widget elementor-widget-heading" data-id="345095c" data-element_type="widget" data-widget_type="heading.default">
-	<div class="elementor-widget-container" style="text-align: right;">
-	<h5 class="elementor-heading-title elementor-size-default">أرسل لنا رساله</h5> </div>
-	</div>
-	<div class="elementor-element elementor-element-0fa95a0 elementor-button-align-start vamtam-has-theme-form-style elementor-widget elementor-widget-form" data-id="0fa95a0" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
-	<div class="elementor-widget-container">
-	<form class="elementor-form" method="post" name="New Form">
-	<input type="hidden" name="post_id" value="1449" />
-	<input type="hidden" name="form_id" value="0fa95a0" />
-	<input type="hidden" name="referer_title" value="Contact" />
-	<input type="hidden" name="queried_id" value="1449" />
-	<div class="elementor-form-fields-wrapper elementor-labels-">
-		<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-33">
-		<label for="form-field-name" class="elementor-field-label elementor-screen-only">Name</label><input size="1" type="text" name="form_fields[name]" id="form-field-name" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Your Name"> </div>
-		<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-33 elementor-field-required">
-		<label for="form-field-email" class="elementor-field-label elementor-screen-only">Email</label><input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="example@gmail.com" required="required" aria-required="true"> </div>
-		<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_57868d1 elementor-col-33 elementor-field-required">
-		<label for="form-field-field_57868d1" class="elementor-field-label elementor-screen-only">Subject</label><input size="1" type="text" name="form_fields[field_57868d1]" id="form-field-field_57868d1" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Enter subject here" required="required" aria-required="true"> </div>
-		<div class="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100">
-		<label for="form-field-message" class="elementor-field-label elementor-screen-only">Message</label><textarea class="elementor-field-textual elementor-field  elementor-size-sm" name="form_fields[message]" id="form-field-message" rows="4" placeholder="Your Message"></textarea> </div>
-			<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
-				<button type="submit" class="elementor-button elementor-size-sm">
-					<span>
-						<span class="elementor-align-icon-left elementor-button-icon">
-							<i aria-hidden="true" class="vamtamtheme- vamtam-theme-arrow-right"></i> 
-						</span>
-						<span class="elementor-button-text">ارسل الان</span>
-					</span>
-				</button>
+	<div class="container">
+		<div class="row">
+		  <div class="col-sm-6 repons" style="font-size: 17px;">
+			<div class="elementor-widget-container" >
+				<a href = "mailto:Advisorengineering2000@gmail.com?subject = Feedback&body = Message" ><i style=" color: red; border-radius: 50%;  float: left; font-size: 30px; margin-right: 10px;" class="fas fa-envelope-square"></i>Advisorengineering2000@gmail.com</a>
 			</div>
-	</div>
-	</form>
-	</div>
-	</div>
-	</div>
-	</div>
-	</div>
-	</section>
+		  </div>
+		  
+		  
+		</div>
+		<br>
+		<div class="row" >
+			<div class="col-sm-5" style=" font-size: 19px;">
+				<a href="tel: 01003733047" target="_blank" class="elementor-button-link elementor-size-sm" role="button">
+					<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text"> (+002) 010-0373-3047<i style=" border-radius: 50%;  float: left; font-size: 30px; margin-right: 20px;" class="fas fa-phone-square-alt"></i></span>
+					</span>
+				</a>		  </div>
+		</div>
+		<br>
+		<div class="row" >
+			<div class="col-lg-8 " style=" font-size: 19px;">
+				
+			<span > (+002) 010-0191-1740<i style="color: green; border-radius: 50%; float: left; font-size: 30px; margin-right: 10px;" class="fab fa-whatsapp-square"></i></span>
+				
+		</div>
+
+	  </div>
 
 
-</form>
+
+
+
+</div>
+
+
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-df589aa elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="df589aa" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-112cee1" data-id="112cee1" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-b866c2e elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="b866c2e" data-element_type="widget" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h6 class="elementor-heading-title elementor-size-default">follow</h6> </div>
+</div>
+<div class="elementor-element elementor-element-dc82eae elementor-widget__width-auto vamtam-has-theme-style elementor-widget elementor-widget-button" style="padding-bottom: 50px;" data-id="dc82eae" data-element_type="widget" data-widget_type="button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a href="https://www.instagram.com/vamtam.themes/" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-text">المستشار-الهندسي-لصيانه-الاجهزة-الرياضيه#</span>
+</span>
+</a>
 </div>
 </div>
+</div>
+<div class="container"  >
+	<div class="row" >
+	  <div class="col-lg-4" style=" margin-top: 10px;">
+		<div class="elementor-widget-container" >
+			<nav role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade"><ul id="menu-1-ff7b5a6" class="elementor-nav-menu">
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3079"><a href="about-us.html" class="elementor-item" style="color: white;"> About us</a></li>
+			</ul></nav>
+		</div>
+		
+	  </div>
+	  <div class="col-lg-7" style="margin-top: 25px;">
+		<p style="color: white; text-align: left;">Every day: 24 hours</p>
+
+	</div>
+	  <div class="col-lg-1" style="   margin: auto;">
+		<a href="#"><i class="fab fa-facebook" style="color: yellow;font-size: 20px; margin-right: 10px; "></i></a>
+		<a href="#"><i class="fab fa-instagram" style=" color: yellow;font-size: 20px;"></i></a>
+	  </div>
+	  
+	</div>
+  </div>
+
+
+
+
 
 
 
@@ -734,30 +781,6 @@ img.emoji {
 </div>
 </div>
 </section>
-	<section class="elementor-section elementor-top-section elementor-element elementor-element-df589aa elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="df589aa" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-container elementor-column-gap-default">
-			<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-112cee1" data-id="112cee1" data-element_type="column">
-				<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-element elementor-element-b866c2e elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="b866c2e" data-element_type="widget" data-widget_type="heading.default">
-						<div class="elementor-widget-container">
-							<h6 class="elementor-heading-title elementor-size-default">follow</h6> 
-						</div>
-					</div>
-					<div class="elementor-element elementor-element-dc82eae elementor-widget__width-auto vamtam-has-theme-style elementor-widget elementor-widget-button" style="padding-bottom: 50px;" data-id="dc82eae" data-element_type="widget" data-widget_type="button.default">
-						<div class="elementor-widget-container">
-							<div class="elementor-button-wrapper">
-								<a href="https://www.instagram.com/vamtam.themes/" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button">
-								<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">المستشار-الهندسي-لصيانه-الاجهزة-الرياضيه#</span>
-								</span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 </div>
 </div>
 </div>
@@ -765,102 +788,8 @@ img.emoji {
 </div> 
 </div>
 </div>
-	<div class="footer-wrapper" >
-		<footer id="main-footer" class="main-footer">
-			<div data-elementor-type="footer" data-elementor-id="284" class="elementor elementor-284 elementor-location-footer" data-elementor-settings="[]">
-				<div class="elementor-section-wrap">
-					<section class="elementor-section elementor-top-section elementor-element elementor-element-1ec5056 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1ec5056" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-0387d0d" data-id="0387d0d" data-element_type="column">
-								<div class="elementor-widget-wrap elementor-element-populated">
-									<div class="elementor-element elementor-element-f1b9b1d elementor-widget__width-auto elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="f1b9b1d" data-element_type="widget" data-settings="{&quot;_animation_tablet&quot;:&quot;none&quot;,&quot;_animation_mobile&quot;:&quot;none&quot;}" data-widget_type="theme-site-logo.default">
-										<div class="elementor-widget-container">
-											<a href="index.php">
-												<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2058%2033'%3E%3C/svg%3E" class="attachment-full size-full" alt="" height="33" width="58" data-lazy-src="assets/images/logo.png" /><noscript><img src="assets/images/logo.png" class="attachment-full size-full" alt="" height="33" width="58" /></noscript> </a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-67e0152" data-id="67e0152" data-element_type="column">
-								<div class="elementor-widget-wrap elementor-element-populated">
-									
-									<div class="elementor-element elementor-element-2bea3b7 elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="2bea3b7" data-element_type="widget" data-widget_type="text-editor.default">
-										<div class="elementor-widget-container">
-											<a href = "mailto:Advisorengineering2000@gmail.com?subject = Feedback&body = Message"><i style=" color: red; border-radius: 50%;  float: left; font-size: 30px; margin-right: 20px;" class="fas fa-envelope-square"></i>Advisorengineering2000@gmail.com</a>
-										</div>
-									</div>
-									<div class="elementor-element elementor-element-2bea3b7 elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="2bea3b7" data-element_type="widget" data-widget_type="text-editor.default">
-										<div class="elementor-widget-container">
-											<span> (+002) 010-0191-1740<i style="color: green; border-radius: 50%; float: left; font-size: 30px; margin-right: 20px;" class="fab fa-whatsapp-square"></i></span>
-										</div>
-									</div>
-									
-									<div class="elementor-element elementor-element-0c97ba4 elementor-widget__width-auto vamtam-has-theme-style elementor-widget elementor-widget-button" data-id="0c97ba4" data-element_type="widget" data-widget_type="button.default">
-										<div class="elementor-widget-container">
-											<div class="elementor-button-wrapper">
-												<a href="tel: 01003733047" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button">
-													<span class="elementor-button-content-wrapper">
-														<span class="elementor-button-text"> (+002) 010-0373-3047<i style=" border-radius: 50%;  float: left; font-size: 30px; margin-right: 20px;" class="fas fa-phone-square-alt"></i></span>
-													</span>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-ef26c14" data-id="ef26c14" data-element_type="column">
-								<div class="elementor-widget-wrap elementor-element-populated">
-									<div class="elementor-element elementor-element-252c85c elementor-widget elementor-widget-text-editor" data-id="252c85c" data-element_type="widget" data-widget_type="text-editor.default">
-										<div class="elementor-widget-container">
-											<p>Every day: 24 hours</p> 
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-379d07f" data-id="379d07f" data-element_type="column">
-								<div class="elementor-widget-wrap elementor-element-populated">
-									<div class="elementor-element elementor-element-8abecb3 e-grid-align-right e-grid-align-left elementor-grid-3 elementor-shape-rounded elementor-widget elementor-widget-social-icons" data-id="8abecb3" data-element_type="widget" data-settings="{&quot;_animation_tablet&quot;:&quot;none&quot;,&quot;_animation_mobile&quot;:&quot;none&quot;}" data-widget_type="social-icons.default">
-										<div class="elementor-widget-container">
-											<div class="elementor-social-icons-wrapper elementor-grid">
-												<div class="elementor-grid-item">
-													<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-4a07e89" href="https://www.facebook.com/Equinox" target="_blank">
-														<span class="elementor-screen-only">Facebook</span>
-														<i class="fab fa-facebook"></i> 
-													</a>
-												</div>
-												<div class="elementor-grid-item">
-													<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-466ddbe" href="https://www.instagram.com/equinox/" target="_blank">
-														<span class="elementor-screen-only">Instagram</span>
-														<i class="fab fa-instagram"></i> 
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
 
-					<section class="elementor-section elementor-top-section elementor-element elementor-element-8bad43c elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8bad43c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a4c24ef" data-id="a4c24ef" data-element_type="column">
-								<div class="elementor-widget-wrap elementor-element-populated">
-									<div class="elementor-element elementor-element-ff7b5a6 elementor-nav-menu__align-left elementor-nav-menu--dropdown-none elementor-widget__width-auto elementor-nav-menu--indicator-classic vamtam-has-mobile-disable-scroll elementor-widget elementor-widget-nav-menu" data-id="ff7b5a6" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;horizontal&quot;}" data-widget_type="nav-menu.default">
-										<div class="elementor-widget-container">
-											<nav role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade"><ul id="menu-1-ff7b5a6" class="elementor-nav-menu">
-											<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3079"><a href="about-us.html" class="elementor-item">About us</a></li>
-											</ul></nav>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div>
-		</footer>
-	</div>
+
 </div>
 
 <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.minbb49.js?ver=5.2.2' id='wc-add-to-cart-js' defer></script>
@@ -925,6 +854,8 @@ var sbiTranslations = {"share":"Share"};
 <script type='text/javascript' id='elementor-pro-frontend-js-before'>
 var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/f7.vamtam.com\/wp-admin\/admin-ajax.php","nonce":"ec21bcf926","urls":{"assets":"https:\/\/f7.vamtam.com\/wp-content\/plugins\/elementor-pro\/assets\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"menu_cart":{"cart_page_url":"https:\/\/f7.vamtam.com\/cart\/","checkout_page_url":"https:\/\/f7.vamtam.com\/checkout\/"},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/f7.vamtam.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
 </script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 <script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/js/frontend.mindeae.js?ver=3.2.1' id='elementor-pro-frontend-js' defer></script>
 <script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/js/elements-handlers.mindeae.js?ver=3.2.1' id='pro-elements-handlers-js' defer></script>
 <script type='text/javascript' src='wp-content/plugins/vamtam-elementor-integration/assets/js/vamtam-elementor-frontend.mincb18.js?ver=1.0.9' id='vamtam-elementor-frontend-js' defer></script>
